@@ -2,7 +2,7 @@
 #include "Restaurant.h"
 
 int main() {
-    Restaurant restaurant(10);
+    Restaurant restaurant;
     restaurant.AcceptCustomers(5);
     restaurant.AcceptCustomers(12);
     restaurant.AcceptCustomers(3);

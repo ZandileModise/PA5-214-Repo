@@ -8,8 +8,8 @@
 
 using namespace std;
 
-Restaurant::Restaurant(int numberOfTables) {
-for (int i = 0; i < numberOfTables; i++) {
+Restaurant::Restaurant() {
+for (int i = 0; i < 10; i++) {
         Table table(i + 1);
         tables.push_back(table);
     }
@@ -18,7 +18,6 @@ for (int i = 0; i < numberOfTables; i++) {
 void Restaurant::AcceptCustomers(int numOfCustomers) {
     int requiredTables = ((numOfCustomers % 4 == 0) ? numOfCustomers / 4 : (numOfCustomers / 4 + 1));
     std::vector<int> reservedTables;
-
     for (auto &table: tables) {
         if (table.isAvailable && requiredTables > 0) {
             table.MarkReserved();

@@ -13,7 +13,7 @@ using namespace std;
 class Restaurant {
 public:
     vector<Table> tables;
-    Restaurant(int numberOfTables);
+    Restaurant();
     void AcceptCustomers(int numOfCustomers);
 };
 
