@@ -11,7 +11,9 @@
 using namespace std;
 
 class Restaurant {
+    static Restaurant* instance;
 public:
+    static Restaurant* GetInstance();
     vector<Table> tables;
     Restaurant();
     void AcceptCustomers(int numOfCustomers);

@@ -7,6 +7,7 @@
 Table::Table(int id) {
     this->id = id;
     this->isAvailable = true;
+    this->tableSize = 4;
 }
 
 void Table::MarkReserved() {
@@ -16,4 +17,16 @@ void Table::MarkReserved() {
 
 void Table::MakeAvailable() {
     this->isAvailable = true;
+}
+
+int Table::getId() const {
+    return id;
+}
+
+bool Table::getState() {
+    return isAvailable;
+}
+
+int Table::getTableSize() {
+    return 4;
 }
