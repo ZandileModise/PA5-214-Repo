@@ -10,10 +10,17 @@ class Table {
 public:
     int id;
     bool isAvailable;
+    int tableSize;
 
     Table(int id);
     void MarkReserved();
     void MakeAvailable();
+    int getId() const;
+    bool getState();
+    int getTableSize();
+
+    
+
 };
 
 

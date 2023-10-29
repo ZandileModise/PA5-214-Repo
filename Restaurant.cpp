@@ -7,6 +7,7 @@
 #include "Restaurant.h"
 
 using namespace std;
+Restaurant* Restaurant::instance = nullptr;
 
 Restaurant::Restaurant() {
 for (int i = 0; i < 10; i++) {
@@ -35,4 +36,14 @@ void Restaurant::AcceptCustomers(int numOfCustomers) {
     } else {
         std::cout << "No enough tables available for " << numOfCustomers << " customers." << "\n";
     }
+
+
 }
+
+Restaurant* Restaurant::GetInstance() {
+    if (instance == nullptr) {
+        instance = new Restaurant();
+    }
+    return instance;
+}
+
