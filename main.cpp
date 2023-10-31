@@ -1,14 +1,27 @@
 #include <iostream>
 #include "Restaurant.h"
+#include "Order.h"
+#include "OrderFactory.h"
+#include "TotalOrders.h"
 
 int main() {
     Restaurant* restaurant = Restaurant::GetInstance();
-    restaurant->AcceptCustomers(4);
-    restaurant->AcceptCustomers(4);
-    restaurant->AcceptCustomers(7);
-    restaurant->AcceptCustomers(9);
-    restaurant->AcceptCustomers(12);
-    restaurant->AcceptCustomers(16);
+    restaurant->acceptCustomers(4);
+    TotalOrders totalOrders;
+    restaurant->createOrder(1, "Pizza");
+    restaurant->createOrder(1, "Pasta");
+    restaurant->createOrder(1, "Pizza");
+    restaurant->createOrder(1, "Pasta");
+    restaurant->createOrder(1, "Pizza");
+    restaurant->prepareAndDeliverOrders(1);
+    restaurant->printReceipt(1);
+    cout<<"-------------------"<<endl;
+    restaurant->acceptCustomers(5);
+    restaurant->createOrder(2, "Pizza");
+    restaurant->createOrder(2, "Pasta");
+    restaurant->createOrder(2, "Pizza");
+    restaurant->prepareAndDeliverOrders(2);
+    restaurant->printReceipt(2);
 
     return 0;
 }

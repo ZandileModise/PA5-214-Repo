@@ -7,4 +7,16 @@ add_executable(COS214Project main.cpp
         Table.cpp
         Table.h
         Restaurant.cpp
-        Restaurant.h)
+        Restaurant.h
+        Customer.cpp
+        Customer.h
+        Order.cpp
+        Order.h
+        PizzaOrder.h
+        PizzaOrder.cpp
+        PastaOrder.cpp
+        PastaOrder.h
+        OrderFactory.cpp
+        OrderFactory.h
+        TotalOrders.cpp
+        TotalOrders.h)
