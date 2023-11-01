@@ -1,23 +1,10 @@
-//
-// Created by 77089 on 2023/10/28.
-//
-
-#ifndef COS214PROJECT_RESTAURANT_H
-#define COS214PROJECT_RESTAURANT_H
-
-
-#include <vector>
-#include "Table.h"
-using namespace std;
-
-class Restaurant {
-    static Restaurant* instance;
+#pragma once
+class Restaurant
+{
 public:
-    static Restaurant* GetInstance();
-    vector<Table> tables;
-    Restaurant();
-    void AcceptCustomers(int numOfCustomers);
+	static int maxNumOfTables;
+	static int numberOfTablesOccupied;
 };
+int Restaurant::maxNumOfTables = 10;
+int Restaurant::numberOfTablesOccupied = 0;
 
-
-#endif //COS214PROJECT_RESTAURANT_H
