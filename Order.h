@@ -1,4 +1,4 @@
-//
+                                                                                                                    //
 // Created by 77089 on 2023/10/31.
 //
 
@@ -13,12 +13,14 @@ class Order {
     int quantity;
 public:
     Order();
+    virtual ~Order() {};
     virtual float getPrice() const = 0;
     virtual void prepare() = 0;
     virtual void deliver() = 0;
     virtual std::string getOrderType() const = 0;
     virtual void incrementQuantity();
      virtual int getQuantity() const;
+    virtual Order* clone() = 0;
 };
 
 

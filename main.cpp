@@ -3,25 +3,27 @@
 #include "Order.h"
 #include "OrderFactory.h"
 #include "TotalOrders.h"
+#include "RestaurantMomento.h"
 
 int main() {
     Restaurant* restaurant = Restaurant::GetInstance();
-    restaurant->acceptCustomers(4);
+    restaurant->acceptCustomers(3);
+    restaurant->acceptCustomers(2);
     TotalOrders totalOrders;
     restaurant->createOrder(1, "Pizza");
     restaurant->createOrder(1, "Pasta");
     restaurant->createOrder(1, "Pizza");
-    restaurant->createOrder(1, "Pasta");
-    restaurant->createOrder(1, "Pizza");
-    restaurant->prepareAndDeliverOrders(1);
     restaurant->printReceipt(1);
     cout<<"-------------------"<<endl;
-    restaurant->acceptCustomers(5);
-    restaurant->createOrder(2, "Pizza");
-    restaurant->createOrder(2, "Pasta");
-    restaurant->createOrder(2, "Pizza");
-    restaurant->prepareAndDeliverOrders(2);
-    restaurant->printReceipt(2);
+    cout<<"Test case for prototype pattern"<<endl;
+    Restaurant* clonedRestaurant = restaurant->clone();
+    clonedRestaurant->printReceipt(1);
 
+    cout<<"-------------------"<<endl;
+    cout<<"Test case for memento pattern"<<endl;
+    RestaurantMomento* momento = restaurant->save(1);
+    restaurant->createOrder(1, "Pasta");
+    restaurant->restore(momento);
+    restaurant->printReceipt(1);
     return 0;
 }

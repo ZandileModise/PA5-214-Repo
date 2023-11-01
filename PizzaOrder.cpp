@@ -18,3 +18,7 @@ float PizzaOrder::getPrice() const {
     return price * getQuantity();
 }
 
+Order *PizzaOrder::clone() {
+    return new PizzaOrder(*this);
+}
+

@@ -19,4 +19,6 @@ add_executable(COS214Project main.cpp
         OrderFactory.cpp
         OrderFactory.h
         TotalOrders.cpp
-        TotalOrders.h)
+        TotalOrders.h
+        RestaurantMomento.cpp
+        RestaurantMomento.h)

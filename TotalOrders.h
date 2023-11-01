@@ -16,6 +16,9 @@ class TotalOrders {
 private:
     map<string, Order*> orders;
 public:
+    TotalOrders();
+    TotalOrders(const TotalOrders& other);
+    TotalOrders& operator=(const TotalOrders& other);
     void addOrder(const string& orderType);
     double calculateTotalPrice();
     void printOrders();

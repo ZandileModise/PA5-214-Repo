@@ -15,6 +15,7 @@ public:
     void prepare() override;
     void deliver() override;
     std::string getOrderType() const override;
+    Order* clone() override;
 
 };
 

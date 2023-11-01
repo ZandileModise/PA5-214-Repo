@@ -15,6 +15,7 @@ public:
     void deliver() override;
     float getPrice() const override;
     std::string getOrderType() const override;
+    Order* clone() override;
 };
 
 

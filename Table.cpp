@@ -34,3 +34,8 @@ bool Table::getState() {
 int Table::getTableSize() {
     return 4;
 }
+
+
+Table* Table::clone() {
+    return new Table(*this);
+}

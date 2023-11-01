@@ -22,4 +22,8 @@ float PastaOrder::getPrice() const {
     return price * getQuantity();
 }
 
+Order *PastaOrder::clone() {
+    return new PastaOrder(*this);
+}
+
 

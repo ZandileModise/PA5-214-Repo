@@ -6,6 +6,7 @@
 
 Order::Order() : quantity(1), price(0.0) {}
 
+
 void Order::incrementQuantity() {
     quantity++;
 }
@@ -13,4 +14,6 @@ void Order::incrementQuantity() {
 int Order::getQuantity() const {
     return quantity;
 }
+
+
 

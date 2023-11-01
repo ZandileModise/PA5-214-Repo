@@ -24,6 +24,7 @@ public:
     int getId() const;
     bool getState();
     int getTableSize();
+    Table* clone();
 
     
 

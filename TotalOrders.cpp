@@ -6,6 +6,8 @@
 #include "TotalOrders.h"
 #include "OrderFactory.h"
 
+TotalOrders::TotalOrders() = default;
+
 void TotalOrders::addOrder(const std::string &orderType) {
     // 检查是否已存在相同类型的订单
     auto it = orders.find(orderType);
@@ -37,4 +39,31 @@ void TotalOrders::prepareAndDeliverOrders() {
         order.second->prepare();
         order.second->deliver();
     }
+}
+
+TotalOrders::TotalOrders(const TotalOrders& other) {
+    for (auto& order : other.orders) {
+        this->orders[order.first] = order.second->clone();
+    }
+}
+
+TotalOrders& TotalOrders::operator=(const TotalOrders& other) {
+    if (this == &other) {
+        return *this;
+    }
+
+    // Here we delete the current objects
+    for(auto& order : this->orders) {
+        delete order.second;
+    }
+
+    // Clear the orders map
+    this->orders.clear();
+
+    // Copy the orders from the other object
+    for (auto& order : other.orders) {
+        this->orders[order.first] = order.second->clone();
+    }
+
+    return *this;
 }

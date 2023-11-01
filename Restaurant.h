@@ -14,13 +14,13 @@
 #include "Table.h"
 #include "Customer.h"
 #include "TotalOrders.h"
+#include "RestaurantMomento.h"
 #include <map>
 using namespace std;
-
+class RestaurantMomento;
 class Restaurant {
     static Restaurant* instance;
     vector<Table> tables;
-    vector<Customer> customers;
     map<int, TotalOrders> totalOrders;
 public:
     static Restaurant* GetInstance();
@@ -31,7 +31,14 @@ public:
     void prepareAndDeliverOrders(int tableId);
     void printOrders(int tableId);
     float calculateTotalPrice(int tableId);
+    void printReceiptHeader(int tableId);
+    void printReceiptFooter(int tableId);
+    void printReceiptBody(int tableId);
     void printReceipt(int tableId);
+    Restaurant* clone();
+    void restore(RestaurantMomento* momento);
+    RestaurantMomento* save(int saveId);
+
 };
 
 
