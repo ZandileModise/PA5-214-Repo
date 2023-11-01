@@ -6,6 +6,9 @@
 ///
 class Rose : public Drink
 {
+    public:
+        string getName();
+        float getPrice();
     private:
         float price = 135.0;
         string name = "Rose";

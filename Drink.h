@@ -10,8 +10,8 @@ class Drink
 {
     public:
         virtual ~Drink(); // TODO: Is VIRTUAL needed?
-        string getName() const;
-        float getPrice() const;
+        virtual string getName() = 0;
+        virtual float getPrice() = 0;
 
     private:
         float price;
@@ -20,10 +20,3 @@ class Drink
 
 #endif  // __DRINK_H_2IC7HO72F1GY__
 
-string Drink::getName() const {
-    return name;
-}
-
-float Drink::getPrice() const {
-    return price;
-}

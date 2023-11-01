@@ -2,8 +2,7 @@
 
 using namespace std;
 
-Drink::~Drink()
- {
+Drink::~Drink() {
     // TODO: Needs implementation
 }
 

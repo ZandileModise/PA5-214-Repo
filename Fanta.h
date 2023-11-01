@@ -6,9 +6,12 @@
 ///
 class Fanta : public Drink 
 {
+    public:
+        string getName();
+        float getPrice();
     private: 
         float price = 39.99;
-        string name = "Fanta";	
+        std::string name = "Fanta";	
 };
 
 #endif  // __FANTA_H_HW9EFM9O8VRW__

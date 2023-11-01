@@ -6,6 +6,9 @@
 ///
 class RedWine : public Drink
 {
+    public:
+        string getName();
+        float getPrice();
     private:
         std::string name = "Red Wine";
         float price = 125.0;	

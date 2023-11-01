@@ -2,32 +2,10 @@
 
 using namespace std;
 
-RedWine::RedWine()
-{
-    // TODO: Needs implementation
+string RedWine::getName() {
+    return name;
 }
 
-RedWine::~RedWine()
-{
-    // TODO: Needs implementation
-}
-
-RedWine::RedWine(const RedWine& other)
-{
-    // TODO: Needs implementation
-}
-
-RedWine::RedWine(RedWine&& other)
-{
-    // TODO: Needs implementation
-}
-
-RedWine& RedWine::operator=(const RedWine &other)
-{
-    // TODO: Needs implementation
-}
-
-RedWine& RedWine::operator=(RedWine &&other)
-{
-    // TODO: Needs implementation
+float RedWine::getPrice() {
+    return price;
 }
