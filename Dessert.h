@@ -18,5 +18,5 @@ class Dessert
 
 #endif  // __DESSERT_H_AXDWJUUORMM7__
 
-Dessert::~Dessert() {}
+
 
