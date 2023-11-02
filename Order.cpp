@@ -7,6 +7,16 @@ using namespace std;
  * @brief Implementation of the Order class, it uses the Memento design pattern
  * @date 2023-04-11
  */
+Order::Order() : quantity(1), price(0.0) {}
+
+
+void Order::incrementQuantity() {
+    quantity++;
+}
+
+int Order::getQuantity() const {
+    return quantity;
+}
 
 Order::Order(int tableNumber) : tableNumber(tableNumber) {}
 
