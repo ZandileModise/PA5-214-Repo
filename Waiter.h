@@ -25,7 +25,6 @@ public:
 
 private:
     int id;
-    // Additional attributes and methods as needed
 };
 
-#endif // WAITER_H
+#endif 

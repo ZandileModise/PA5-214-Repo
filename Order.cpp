@@ -2,6 +2,12 @@
 using namespace std;
 #include "Order.h"
 
+/**
+ * @file Order.cpp
+ * @brief Implementation of the Order class, it uses the Memento design pattern
+ * @date 2023-04-11
+ */
+
 Order::Order(int tableNumber) : tableNumber(tableNumber) {}
 
 void Order::addDish(const std::string& dish) {
