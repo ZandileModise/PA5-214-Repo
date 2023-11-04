@@ -38,24 +38,3 @@ std::string SaladIngredient::getName() {
  */
 SaladIngredient::~SaladIngredient() {}
 
-/**
- * @brief add protein to salad ingredients
- * 
- * @param protein 
- */
-void SaladIngredient::addProtein(Protein* protein) {
-    proteins.push_back(protein);
-}
-
-/**
- * @brief get price of proteins added to salad
- * 
- * @return float 
- */
-float SaladIngredient::getIngredientPrice() {
-    float price = 0.0;
-    for (auto protein : proteins) {
-        price += protein->getPrice();
-    }
-    return price;
-}

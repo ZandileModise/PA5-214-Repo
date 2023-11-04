@@ -10,10 +10,11 @@ class Salad
 {
     public:
         void addIngredient(SaladIngredient* ingredient);
-        float getPrice();
+        void addProtein(Protein* protein);
+        string getPrice();
     private:
         std::vector<SaladIngredient*> ingredients;
-
+        std::vector<Protein*> proteins;
 };
 
 #endif  // __SALAD_H_IFOAA2LHXIFJ__

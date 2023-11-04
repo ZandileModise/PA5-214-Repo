@@ -13,13 +13,11 @@ class SaladIngredient
         virtual ~SaladIngredient();
         virtual float getPrice();
         virtual std::string getName();
-        void addProtein(Protein* protein);
         float getIngredientPrice();
 
     private:
         std::string name;
         float price;
-        std::vector<Protein*> proteins;
 };
 
 #endif  // __SALAD_INGREDIENT_H_Z99VHBRUWIC3__
