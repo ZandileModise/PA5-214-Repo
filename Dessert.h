@@ -1,6 +1,8 @@
 #ifndef __DESSERT_H_AXDWJUUORMM7__
 #define __DESSERT_H_AXDWJUUORMM7__
 #include <iostream>
+
+using namespace std;
 ///////////////////////////////////////////////////////////
 /// @brief Dessert
 ///

@@ -7,12 +7,12 @@
 class CheeseCake
 {
     public:
-        string getName();
+        std::string getName();
         float getPrice();
 
     private:
         float price = 60.0;
-        string name = "Cheese Cake";
+        std::string name = "Cheese Cake";
 };
 
 #endif  // __CHEESE_CAKE_H_V0GGFXWYNHG9__

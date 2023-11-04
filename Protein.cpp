@@ -27,3 +27,12 @@ Protein::~Protein() {}
 float Protein::getPrice() {
     return price;
 }
+
+/**
+ * @brief get name of protein
+ * 
+ * @return string 
+ */
+string Protein::getName() {
+    return name;
+}
