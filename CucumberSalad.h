@@ -1,13 +1,13 @@
-#ifndef __CUCUMBER_H_TWRLU6G0OV8J__
-#define __CUCUMBER_H_TWRLU6G0OV8J__
+#ifndef __CUCUMBERSALAD_H_TWRLU6G0OV8J__
+#define __CUCUMBERSALAD_H_TWRLU6G0OV8J__
 #include "SaladIngredient.h"
 ///////////////////////////////////////////////////////////
 /// @brief Cucumber
 ///
-class Cucumber : public SaladIngredient
+class CucumberSalad : public SaladIngredient
 {
     public:
-        Cucumber();
+        CucumberSalad();
 };
 
 #endif  // __CUCUMBER_H_TWRLU6G0OV8J__

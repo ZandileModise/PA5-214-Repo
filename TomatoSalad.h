@@ -1,13 +1,13 @@
-#ifndef __TOMATO_H_S2YKWX3LFUDD__
-#define __TOMATO_H_S2YKWX3LFUDD__
+#ifndef __TOMATOSALAD_H_S2YKWX3LFUDD__
+#define __TOMATOSALAD_H_S2YKWX3LFUDD__
 #include "SaladIngredient.h"
 ///////////////////////////////////////////////////////////
 /// @brief Tomato
 ///
-class Tomato : public SaladIngredient
+class TomatoSalad : public SaladIngredient
 {
     public:
-        Tomato();
+        TomatoSalad();
 };
 
 #endif  // __TOMATO_H_S2YKWX3LFUDD__

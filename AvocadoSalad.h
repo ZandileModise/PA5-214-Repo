@@ -1,13 +1,13 @@
-#ifndef __AVOCADO_H_RXFJFORBSTCV__
-#define __AVOCADO_H_RXFJFORBSTCV__
+#ifndef __AVOCADOSALAD_H_RXFJFORBSTCV__
+#define __AVOCADOSALAD_H_RXFJFORBSTCV__
 #include "SaladIngredient.h"
 ///////////////////////////////////////////////////////////
 /// @brief Avocado
 ///
-class Avocado : public SaladIngredient
+class AvocadoSalad : public SaladIngredient
 {
     public:
-        Avocado();
+        AvocadoSalad();
 };
 
 #endif  // __AVOCADO_H_RXFJFORBSTCV__

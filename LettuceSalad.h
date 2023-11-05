@@ -1,13 +1,13 @@
-#ifndef __LETTUCE_H_SCNTTMSVS7V3__
-#define __LETTUCE_H_SCNTTMSVS7V3__
+#ifndef __LETTUCESALAD_H_SCNTTMSVS7V3__
+#define __LETTUCESALAD_H_SCNTTMSVS7V3__
 #include "SaladIngredient.h"
 ///////////////////////////////////////////////////////////
 /// @brief Lettuce
 ///
-class Lettuce : public SaladIngredient
+class LettuceSalad : public SaladIngredient
 {
     public:
-        Lettuce();
+        LettuceSalad();
 };
 
 #endif  // __LETTUCE_H_SCNTTMSVS7V3__

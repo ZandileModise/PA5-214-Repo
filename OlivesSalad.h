@@ -1,13 +1,13 @@
-#ifndef __OLIVES_H_3WJI0FKH7IC0__
-#define __OLIVES_H_3WJI0FKH7IC0__
+#ifndef __OLIVESSALAD_H_3WJI0FKH7IC0__
+#define __OLIVESSALAD_H_3WJI0FKH7IC0__
 #include "SaladIngredient.h"
 ///////////////////////////////////////////////////////////
 /// @brief Olives
 ///
-class Olives : public SaladIngredient
+class OlivesSalad : public SaladIngredient
 {
     public:
-        Olives();
+        OlivesSalad();
 };
 
 #endif  // __OLIVES_H_3WJI0FKH7IC0__
