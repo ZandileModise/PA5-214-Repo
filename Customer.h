@@ -1,22 +1,20 @@
-#pragma once
-#include"CustomerStates.h"
-using namespace std;
-class Customer
-{
-private:
-	CustomerStates* states;
-	int tableNumber;
+//
+// Created by 77089 on 2023/10/31.
+//
 
+#ifndef COS214PROJECT_CUSTOMER_H
+#define COS214PROJECT_CUSTOMER_H
+
+
+class Customer {
+    int id;
+    int numOfPeople;
 public:
-	Customer();
-	~Customer();
-	 void getTable();
-	 void Pay() ;
-	 void Order();
-	 void Tip();
-	 void Complain();
-	 void CompleteOrder();
-	 void CancelOrder();
+    Customer(int id, int numOfPeople);
+    int getId() const;
+    int getNumOfPeople() const;
 
 };
 
+
+#endif //COS214PROJECT_CUSTOMER_H

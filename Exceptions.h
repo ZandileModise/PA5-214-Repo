@@ -3,13 +3,13 @@
 #include"string"
 using namespace std;
 
-class Exceptions 
+class Exceptions
 {
 public:
 	string message;
 	Exceptions(string message) {
 		this->message = message;
 	}
-	
+
 };
 
