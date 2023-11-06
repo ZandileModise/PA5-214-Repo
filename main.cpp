@@ -6,6 +6,7 @@
 #include "ThickCrust.h"
 #include "ThinCrust.h"
 #include "TomatoSauceDecorator.h"
+#include <iostream>
 
 int main() {
   Pizza *pizza = new ThinCrust();
@@ -15,6 +16,7 @@ int main() {
   pizza = new AvocadoDecorator(pizza);
 
   float price = pizza->getPrice();
+  cout << price << endl;
 
   return 0;
 }
