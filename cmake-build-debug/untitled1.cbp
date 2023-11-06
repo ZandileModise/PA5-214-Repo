@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled1">
+				<Option output="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/untitled1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled1"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled1/fast">
+				<Option output="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/untitled1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled1/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Arrival.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Arrival.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Customer.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Customer.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Exceptions.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Exceptions.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Exit.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Exit.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/GotTable.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/GotTable.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Order.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Order.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/OrderFactory.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/OrderFactory.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/OrderMemento.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/OrderMemento.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Paid.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Paid.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/PartyStates.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/PartyStates.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/PastaOrder.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/PastaOrder.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/PizzaOrder.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/PizzaOrder.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Restaurant.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Restaurant.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/RestaurantMomento.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/RestaurantMomento.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Table.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Table.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/TotalOrders.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/TotalOrders.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Waiter.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/Waiter.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/addOrder.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/addOrder.h">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/main.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/vzhou/Documents/GitHub/PA5-214-Repo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
