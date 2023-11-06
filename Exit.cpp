@@ -1,5 +1,7 @@
 #include "Exit.h"
-
+Exit::Exit(){
+    stateName="Exit";
+}
 PartyStates* Exit::pay() {
   throw Exceptions("Customer have left");
 }

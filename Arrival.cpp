@@ -4,7 +4,7 @@
 #include"Exceptions.h"
 #include"Complain.h"
 #include "Exit.h"
-Arrival::Arrival() {stateName="Arrival State"};
+Arrival::Arrival() {stateName="Arrival State";};
 PartyStates* Arrival::pay() {
   throw  new Exceptions("Cannot pay bill before you order");
 }
