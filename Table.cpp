@@ -1,8 +1,17 @@
 //
 // Created by 77089 on 2023/10/28.
 //
+<<<<<<< HEAD
 
 #include "Table.hpp"
+=======
+/**
+ * @file Table.cpp
+ * @brief Implementation Table class, which is used to represent a table in the restaurant, each table has a unique id, a state and size of 4
+ * @date [date]
+ */
+#include "Table.h"
+>>>>>>> experimental-merge-of-code
 
 Table::Table(int id) {
     this->id = id;
@@ -30,3 +39,11 @@ bool Table::getState() {
 int Table::getTableSize() {
     return 4;
 }
+<<<<<<< HEAD
+=======
+
+
+Table* Table::clone() {
+    return new Table(*this);
+}
+>>>>>>> experimental-merge-of-code
