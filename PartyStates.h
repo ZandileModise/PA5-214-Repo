@@ -5,7 +5,6 @@ class PartyStates
 {
 public:
 	PartyStates();
-	virtual PartyStates* getTable()=0;
 	virtual	PartyStates* pay() = 0;
 	virtual PartyStates* order()=0;
 	virtual PartyStates* tip() = 0;

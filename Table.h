@@ -27,7 +27,7 @@ public:
     bool getState();
     int getTableSize();
     Table* clone();
-
+    
     
 
 };

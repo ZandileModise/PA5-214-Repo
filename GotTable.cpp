@@ -3,9 +3,7 @@
 #include "Complain.h"
 #include "Exit.h"
 #include "Order.h"
-PartyStates* GotTable::getTable() {
-  throw new Exceptions("You already have a table");
-}
+
 PartyStates* GotTable::pay() {
   throw new Exceptions("Cannot pay bill before you order");
 }

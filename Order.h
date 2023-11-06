@@ -1,12 +1,9 @@
-                                                                                                                    //
-// Created by 77089 on 2023/10/31.
-//
-
-#ifndef COS214PROJECT_ORDER_H
-#define COS214PROJECT_ORDER_H
-
+#ifndef ORDER_H
+#define ORDER_H
 
 #include <string>
+#include <vector>
+#include "OrderMemento.h"
 
 class Order {
     float price;
@@ -19,9 +16,18 @@ public:
     virtual void deliver() = 0;
     virtual std::string getOrderType() const = 0;
     virtual void incrementQuantity();
-     virtual int getQuantity() const;
+    virtual int getQuantity() const;
     virtual Order* clone() = 0;
+    Order(int tableNumber);
+    void addDish(const std::string& dish);
+    int getTableNumber() const;
+    void display() const;
+    OrderMemento saveToMemento() const;
+    void restoreFromMemento(const OrderMemento& memento);
+
+private:
+    int tableNumber;
+    std::vector<std::string> dishes;
 };
 
-
-#endif //COS214PROJECT_ORDER_H
+#endif // ORDER_H

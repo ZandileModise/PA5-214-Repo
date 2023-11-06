@@ -1,14 +1,25 @@
-//
-// Created by User on 2023/11/03.
-//
+#ifndef ARRIVAL_H_
+#define ARRIVAL_H_
+#include "PartyStates.h"
+/**
+ * @class Arrival
+ * this is the state that the customer is in when they first arrive at the restaurant
+*/
+class Arrival :public PartyStates {
+ private:
+  Arrival() {
+}
+ public:
 
-#ifndef UNTITLED1_ARRIVAL_H
-#define UNTITLED1_ARRIVAL_H
-
-
-class Arrival {
-
+  friend class Customer;
+  PartyStates* getTable()override;
+  PartyStates* pay()override;
+  PartyStates* order()override;
+  PartyStates* tip()override;
+  PartyStates* addOrder()override;
+  PartyStates* completeOrder()override;
+  PartyStates* cancelOrder()override;
+  PartyStates* exit() override;
 };
 
-
-#endif //UNTITLED1_ARRIVAL_H
+#endif

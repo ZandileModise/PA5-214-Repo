@@ -223,10 +223,17 @@ bool Restaurant::Paid(int tableId) {
       std::cout << "Table " << tableId << " is not reserved."
                 << "\n";
     } else {
-      if (totalOrders.find(tableId) == totalOrders.end()) {
+      try{
+        table->state = table->state->pay();
+        if (totalOrders.find(tableId) == totalOrders.end()) {
         std::cout << "No orders for table " << tableId << "\n";
       } else {
         return this->totalOrders[tableId].Paid();
+      }
+      }
+      catch(Exceptions & exc)
+      {
+        std::cout << exc.message << "\n";
       }
     }
   }
