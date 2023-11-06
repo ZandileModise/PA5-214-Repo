@@ -13,10 +13,15 @@
  */
 
 class Table {
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 public:
     int id;
     bool isAvailable;
     int tableSize;
+    PartyStates* state;
 
     Table(int id);
     void MarkReserved();

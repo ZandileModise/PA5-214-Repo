@@ -1,9 +1,9 @@
 #ifndef GOTTABLE_H
 #define GOTTABLE_H
-#include "CustomerStates.h"
+#include "PartyStates.h"
 #include"Arrival.h"
 class GotTable :
-    public CustomerStates {
+    public PartyState {
  private:
   GotTable() {
 }
@@ -11,15 +11,16 @@ class GotTable :
 
  public:
   friend class Arrival;
-  CustomerStates* getTable()override;
-  CustomerStates* pay()override;
-  CustomerStates* order()override;
-  CustomerStates* tip()override;
-  CustomerStates* complain()override;
-  CustomerStates* completeOrder()override;
-	CustomerStates* addOrder()override;
-  CustomerStates* cancelOrder()override;
-  virtual CustomerStates* exit()override;
+  friend class Table;
+  PartyState* getTable()override;
+  PartyState* pay()override;
+  PartyState* order()override;
+  PartyState* tip()override;
+
+  PartyState* completeOrder()override;
+	PartyState* addOrder()override;
+  PartyState* cancelOrder()override;
+  virtual PartyState* exit()override;
 };
 
 #endif

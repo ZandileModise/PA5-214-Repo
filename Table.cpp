@@ -7,6 +7,7 @@
  * @date [date]
  */
 #include "Table.h"
+#include"GotTable.h"
 
 Table::Table(int id) {
     this->id = id;
@@ -16,6 +17,7 @@ Table::Table(int id) {
 
 void Table::MarkReserved() {
     this->isAvailable = false;
+    state=new GotTable();
 }
 
 
