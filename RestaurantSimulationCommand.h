@@ -7,6 +7,11 @@
 
 #include "RestaurantCommand.h"
 #include "Restaurant.h"
+/**
+ * @file RestaurantSimulationCommand.h
+ * @brief Implementation of the RestaurantCommand class, which is used to represent a abstract command in the restaurant
+ * @date [date]
+ */
 
 class RestaurantSimulationCommand : public RestaurantCommand{
 

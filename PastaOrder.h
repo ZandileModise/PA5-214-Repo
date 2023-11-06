@@ -1,7 +1,11 @@
 //
 // Created by 77089 on 2023/10/31.
 //
-
+/**
+ * @file PastaOrder.h
+ * @brief Implementation of the PastaOrder class, which is used to represent a pasta order in the restaurant
+ * @date [date]
+ */
 #ifndef COS214PROJECT_PASTAORDER_H
 #define COS214PROJECT_PASTAORDER_H
 

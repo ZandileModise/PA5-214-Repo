@@ -4,7 +4,6 @@
 
 #ifndef COS214PROJECT_RESTAURANT_H
 #define COS214PROJECT_RESTAURANT_H
-
 /**
  * @file Restaurant.h
  * @brief Implementation of the Restaurant class, it uses the Singleton pattern to ensure that only one instance of the restaurant is created, and flyweight pattern to ensure that only ten instance of the tables are created

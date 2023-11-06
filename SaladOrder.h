@@ -4,6 +4,11 @@
 
 #ifndef COS214PROJECT_SALADORDER_H
 #define COS214PROJECT_SALADORDER_H
+/**
+ * @file SaladOrder.h
+ * @brief Implementation of the Order class, which is used to represent an order in the restaurant
+ * @date [date]
+ */
 
 #include "Order.h"
 class SaladOrder :public Order{

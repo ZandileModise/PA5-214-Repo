@@ -2,6 +2,13 @@
 // Created by 77089 on 2023/11/6.
 //
 
+/**
+ * @file RestaurantFacade.h
+ * @brief  Implementation of the RestaurantFacade class, which is used to represent a facade in the restaurant
+ * @date [date]
+ */
+
+
 #ifndef COS214PROJECT_RESTAURANTFACADE_H
 #define COS214PROJECT_RESTAURANTFACADE_H
 #include "Restaurant.h"
@@ -23,7 +30,6 @@ public:
     void execute(RestaurantSimulationCommand* command);
 private:
     Restaurant* restaurant;
-
 };
 
 

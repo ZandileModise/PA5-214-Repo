@@ -1,6 +1,11 @@
 //
 // Created by 77089 on 2023/10/31.
 //
+/**
+ * @file TotalOrders.h
+ * @brief Implementation of the TotalOrder class, it uses composite pattern to ensure that the orders are stored in a tree structure
+ * @date [date]
+ */
 
 #ifndef COS214PROJECT_TOTALORDERS_H
 #define COS214PROJECT_TOTALORDERS_H

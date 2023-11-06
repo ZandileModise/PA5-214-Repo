@@ -1,7 +1,11 @@
 //
 // Created by 77089 on 2023/11/6.
 //
-
+/**
+ * @file DrinkOrder.h
+ * @brief Implementation of the DrinkOrder class, which is used to represent a drink order in the restaurant
+ * @date [date]
+ */
 #ifndef COS214PROJECT_DRINKORDER_H
 #define COS214PROJECT_DRINKORDER_H
 

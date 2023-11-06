@@ -1,6 +1,10 @@
                                                                                                                //// Created by 77089 on 2023/10/31.
 //
-
+/**
+ * @file Order.h
+ * @brief Implementation of the Order class, which is used to represent an order in the restaurant
+ * @date [date]
+ */
 #ifndef COS214PROJECT_ORDER_H
 #define COS214PROJECT_ORDER_H
 
