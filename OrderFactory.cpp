@@ -7,13 +7,26 @@
 #include "PizzaOrder.h"
 #include "PastaOrder.h"
 #include "memory"
+#include "SaladOrder.h"
+#include "DesertOrder.h"
+#include "DrinkOrder.h"
 
 Order* OrderFactory::createOrder(const std::string& orderType) {
     if (orderType == "Pizza") {
         return new PizzaOrder;
     } else if (orderType == "Pasta") {
         return new PastaOrder;
-    } else {
+    }
+     else if (orderType == "Salad") {
+        return new SaladOrder;
+    }
+     else if (orderType == "Desert") {
+        return new DesertOrder;
+    }
+     else if (orderType == "Drink") {
+        return new DrinkOrder;
+    }
+    else {
         std::cerr << "Invalid order type: " << orderType << std::endl;
         return nullptr;
     }

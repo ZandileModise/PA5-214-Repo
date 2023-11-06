@@ -17,6 +17,7 @@ private:
     map<string, Order*> orders;
 public:
     TotalOrders();
+    ~TotalOrders();
     TotalOrders(const TotalOrders& other);
     TotalOrders& operator=(const TotalOrders& other);
     void addOrder(const string& orderType);

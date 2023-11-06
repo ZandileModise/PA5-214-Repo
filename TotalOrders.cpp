@@ -76,3 +76,7 @@ bool TotalOrders::Paid() {
         return true;
     }
 }
+
+TotalOrders::~TotalOrders() {
+
+}

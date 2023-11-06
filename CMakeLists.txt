@@ -21,4 +21,10 @@ add_executable(COS214Project main.cpp
         TotalOrders.cpp
         TotalOrders.h
         RestaurantMomento.cpp
-        RestaurantMomento.h)
+        RestaurantMomento.h
+        SaladOrder.cpp
+        SaladOrder.h
+        DesertOrder.cpp
+        DesertOrder.h
+        DrinkOrder.cpp
+        DrinkOrder.h)

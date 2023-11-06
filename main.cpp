@@ -13,6 +13,8 @@ int main() {
     restaurant->createOrder(1, "Pizza");
     restaurant->createOrder(1, "Pasta");
     restaurant->createOrder(1, "Pizza");
+    restaurant->createOrder(1, "Drink");
+    restaurant->createOrder(1, "Salad");
     restaurant->printReceipt(1);
     cout<<"-------------------"<<endl;
     cout<<"Test case for prototype pattern"<<endl;
@@ -22,6 +24,7 @@ int main() {
     cout<<"-------------------"<<endl;
     cout<<"Test case for memento pattern"<<endl;
     RestaurantMomento* momento = restaurant->save(1);
+    restaurant->createOrder(1, "Pizza");
     restaurant->createOrder(1, "Pasta");
     restaurant->restore(momento);
     restaurant->printReceipt(1);

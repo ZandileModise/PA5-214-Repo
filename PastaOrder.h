@@ -11,6 +11,7 @@ class PastaOrder : public Order{
  float price = 50;
  int quantity;
 public:
+    PastaOrder() : quantity(1) {};
     float getPrice() const override;
     void prepare() override;
     void deliver() override;
