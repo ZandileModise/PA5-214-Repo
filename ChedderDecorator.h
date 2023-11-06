@@ -2,11 +2,11 @@
 #include "ToppingDecorator.h"
 using namespace std;
 
-class ChedderDecorator : public ToppingDecorator {
+class CheddarDecorator : public ToppingDecorator {
 public:
-  ChedderDecorator(Pizza *p) {
+  CheddarDecorator(Pizza *p) {
     this->wrapee = p;
-    this->name = "Chedder";
+    this->name = "Cheddar";
     this->price = 10;
   }
 

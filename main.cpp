@@ -9,7 +9,9 @@
 #include <iostream>
 
 int main() {
+  // doughchef
   Pizza *pizza = new ThinCrust();
+  // toppingchef
   pizza = new TomatoSauceDecorator(pizza);
   pizza = new MozarellaDecorator(pizza);
   pizza = new BaconDecorator(pizza);
