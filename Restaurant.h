@@ -38,6 +38,7 @@ public:
     Restaurant* clone();
     void restore(RestaurantMomento* momento);
     RestaurantMomento* save(int saveId);
+    bool Paid(int tableId);
 
 };
 

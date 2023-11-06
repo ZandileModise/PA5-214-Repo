@@ -23,6 +23,7 @@ public:
     double calculateTotalPrice();
     void printOrders();
     void prepareAndDeliverOrders();
+    bool Paid();
 };
 
 
