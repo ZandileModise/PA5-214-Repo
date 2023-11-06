@@ -15,6 +15,7 @@
 #include "TotalOrders.h"
 #include "RestaurantMomento.h"
 #include "Waiter.h"
+#include "Iterator.h"
 #include <map>
 using namespace std;
 class RestaurantMomento;
@@ -23,9 +24,11 @@ class Restaurant {
     vector<Table> tables;
     map<int, TotalOrders> totalOrders;
     std::vector<Waiter> waiters;
+
 public:
     static Restaurant* GetInstance();
     Restaurant();
+    ~Restaurant();
     void acceptCustomers(int numOfCustomers);
     void MakeTableAvailable(int tableId);
     void createOrder(int tableId, const std::vector<std::string>& orderTypes);
@@ -46,6 +49,7 @@ public:
     void assignWaiter(int tableId);
     bool isWaiterAssigned(int tableId);
     void removeWaiter(int tableId);
+    Iterator* createIterator();
 };
 
 

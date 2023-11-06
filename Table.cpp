@@ -52,4 +52,12 @@ bool Table::isWaiterAssigned() {
     return waiter != nullptr;
 }
 
+int Table::getNumberOfTables() {
+    return 10;
+}
+
+Table Table::getTable(int i) {
+    return Table(i);
+}
+
 

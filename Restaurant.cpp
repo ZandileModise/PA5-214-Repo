@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <unistd.h>
 #include "Restaurant.h"
+#include "TableIterator.h"
 /**
  * @file Restaurant.cpp
  * @brief Implementation of the Restaurant class, it uses the Singleton pattern to ensure that only one instance of the restaurant is created, and flyweight pattern to ensure that only ten instance of the tables are created
@@ -24,7 +25,8 @@ for (int i = 0; i < 10; i++) {
 void Restaurant::acceptCustomers(int numOfCustomers) {
     int requiredTables = ((numOfCustomers % 4 == 0) ? numOfCustomers / 4 : (numOfCustomers / 4 + 1));
     std::vector<int> reservedTables;
-
+    Iterator* tableIterator = createIterator();
+    tableIterator->first();
     for (auto &table : tables) {
         if (table.isAvailable && requiredTables > 0) {
             table.MarkReserved();
@@ -32,7 +34,7 @@ void Restaurant::acceptCustomers(int numOfCustomers) {
             requiredTables--;
         }
     }
-
+delete tableIterator;
     if (requiredTables == 0) {
         std::cout << "Customers will be seated at table: ";
         for (auto t : reservedTables) {
@@ -267,4 +269,12 @@ void Restaurant::removeWaiter(int tableId) {
             }
         }
     }
+}
+
+Iterator *Restaurant::createIterator() {
+    return new TableIterator(tables);
+}
+
+Restaurant::~Restaurant() {
+
 }

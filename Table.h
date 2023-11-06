@@ -30,6 +30,10 @@ public:
     int getWaiterId();
     void assignWaiter(int i);
     bool isWaiterAssigned();
+
+    int getNumberOfTables();
+
+    Table getTable(int i);
 };
 
 

@@ -15,6 +15,7 @@
 class OrderFactory {
 public:
     Order* createOrder(const std::string& orderType);
+    ~OrderFactory() = default;
 };
 
 

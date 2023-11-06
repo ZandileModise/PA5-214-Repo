@@ -5,7 +5,11 @@
 #ifndef COS214PROJECT_WAITER_H
 #define COS214PROJECT_WAITER_H
 
-
+/**
+ * @file Waiter.h
+ * @brief Implementation of the Waiter class, which is used to represent a waiter in the restaurant
+ * @date [date]
+ */
 #include <vector>
 
 class Waiter {
