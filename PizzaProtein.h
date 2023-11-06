@@ -1,22 +1,23 @@
-#ifndef __PROTEIN_H_L0FF5A7QYM94__
-#define __PROTEIN_H_L0FF5A7QYM94__
+#ifndef __PIZZAPROTEIN_H_L0FF5A7QYM94__
+#define __PIZZAPROTEIN_H_L0FF5A7QYM94__
 #include <iostream>
+#include "Pizza.h"
 
 using namespace std;
 ///////////////////////////////////////////////////////////
 /// @brief Protein
 ///
-class Protein
+class PizzaProtein
 {
     public:
-        Protein(std::string name, float price);
-        virtual ~Protein();
+        PizzaProtein(std::string name, float price);
         float getPrice();
         std::string getName();
 
     private:
         std::string name;
         float price;
+        Pizza* wrapee;
 };
 
 #endif  // __PROTEIN_H_L0FF5A7QYM94__

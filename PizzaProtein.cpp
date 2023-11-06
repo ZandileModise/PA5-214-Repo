@@ -1,30 +1,25 @@
-#include "Protein.h"
+#include "PizzaProtein.h"
 
 using namespace std;
 
 /**
- * @brief Construct a new Protein:: Protein object
+ * @brief Construct a new PizzaProtein:: PizzaProtein object
  * 
  * @param name 
  * @param price 
  */
-Protein::Protein(std::string name, float price) {
+PizzaProtein::PizzaProtein(std::string name, float price) {
     this->name = name;
     this->price = price;
 }
 
-/**
- * @brief Destroy the Protein:: Protein object
- * 
- */
-Protein::~Protein() {}
 
 /**
  * @brief get price of protein
  * 
  * @return float 
  */
-float Protein::getPrice() {
+float PizzaProtein::getPrice() {
     return price;
 }
 
@@ -33,6 +28,6 @@ float Protein::getPrice() {
  * 
  * @return string 
  */
-string Protein::getName() {
+string PizzaProtein::getName() {
     return name;
 }
