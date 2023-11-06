@@ -14,8 +14,15 @@
 #include "CheeseChef.hpp"
 #include "SaladDressingChef.hpp"
 #include "GarnishChef.hpp"
+#include "Gameloop.hpp"
+#include "Restaurant.hpp"
+#include "Table.hpp"
 
 int main(){
+
+
+    Gameloop game;
+    game.startLoop();
 
     std::vector<std::string> order;
     // order.push_back("Pizza Dough");

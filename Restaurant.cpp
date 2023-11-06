@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <algorithm>
-#include "Restaurant.h"
+#include "Restaurant.hpp"
 
 using namespace std;
 Restaurant* Restaurant::instance = nullptr;
