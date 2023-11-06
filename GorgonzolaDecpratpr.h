@@ -2,9 +2,9 @@
 #include "ToppingDecorator.h"
 using namespace std;
 
-class MozarellaDecorator : public ToppingDecorator {
+class GorgonzolaDecorator : public ToppingDecorator {
 public:
-  MozarellaDecorator(Pizza *p) {
+  GorgonzolaDecorator(Pizza *p) {
     this->wrapee = p;
     this->name = "Mozarella";
     this->price = 10;

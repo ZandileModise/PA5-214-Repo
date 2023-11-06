@@ -2,9 +2,8 @@
 #include "Pizza.h"
 #include <string>
 
-class ToppingDecorator : public Pizza {
+class PizzaBase : public Pizza {
 public:
   float price;
-  Pizza *wrapee;
   std::string name;
 };
