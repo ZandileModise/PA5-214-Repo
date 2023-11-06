@@ -34,4 +34,6 @@ add_executable(COS214Project main.cpp
         RestaurantCommand.h
         RestaurantSimulationCommand.cpp
         RestaurantSimulationCommand.h
+        Waiter.cpp
+        Waiter.h
 )

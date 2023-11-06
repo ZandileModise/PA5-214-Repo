@@ -6,6 +6,7 @@
 #define COS214PROJECT_TABLE_H
 #include <vector>
 #include "OrderFactory.h"
+#include "Waiter.h"
 /**
  * @file Table.h
  * @brief Implementation Table class, which is used to represent a table in the restaurant, each table has a unique id, a state and size of 4
@@ -13,11 +14,12 @@
  */
 
 class Table {
+private:
+    Waiter* waiter;
 public:
     int id;
     bool isAvailable;
     int tableSize;
-
     Table(int id);
     void MarkReserved();
     void MakeAvailable();
@@ -25,9 +27,9 @@ public:
     bool getState();
     int getTableSize();
     Table* clone();
-
-    
-
+    int getWaiterId();
+    void assignWaiter(int i);
+    bool isWaiterAssigned();
 };
 
 

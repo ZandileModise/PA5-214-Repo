@@ -38,5 +38,5 @@ int main() {
 
     RestaurantFacade facade;
     facade.execute(new RestaurantSimulationCommand(Restaurant::GetInstance()));
-    return 0;
+
 }

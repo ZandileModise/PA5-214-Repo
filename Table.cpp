@@ -11,7 +11,7 @@
 Table::Table(int id) {
     this->id = id;
     this->isAvailable = true;
-    this->tableSize = 4;
+    waiter = nullptr;
 }
 
 void Table::MarkReserved() {
@@ -39,3 +39,17 @@ int Table::getTableSize() {
 Table* Table::clone() {
     return new Table(*this);
 }
+
+int Table::getWaiterId() {
+    return waiter->getWaiterId();
+}
+
+void Table::assignWaiter(int i) {
+    waiter = new Waiter(i);
+}
+
+bool Table::isWaiterAssigned() {
+    return waiter != nullptr;
+}
+
+

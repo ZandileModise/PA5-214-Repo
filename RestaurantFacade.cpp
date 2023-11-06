@@ -58,3 +58,15 @@ void RestaurantFacade::execute(RestaurantSimulationCommand *command) {
     simulationCommand.execute();
 }
 
+void RestaurantFacade::displayWaiter(int tableId) {
+    restaurant->displayWaiter(tableId);
+}
+
+void RestaurantFacade::assignWaiter(int tableId) {
+    restaurant->assignWaiter(tableId);
+}
+
+bool RestaurantFacade::isWaiterAssigned(int tableId) {
+    return restaurant->isWaiterAssigned(tableId);
+}
+

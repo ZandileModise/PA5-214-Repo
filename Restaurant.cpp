@@ -60,41 +60,30 @@ void Restaurant::MakeTableAvailable(int tableId) {
     cout<<"Table "<<tableId<<" is now available"<<endl;
 }
 
-//void Restaurant::createOrder(int tableId, const string& orderType) {
-//    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
-//    if (table != tables.end()) {
-//        if (table->isAvailable) {
-//            std::cout << "Table " << tableId << " is not reserved." << "\n";
-//        } else {
-//            if (totalOrders.find(tableId) == totalOrders.end()) {
-//                TotalOrders newTotalOrders; // 使用不同的名称来创建 TotalOrders 对象
-//                newTotalOrders.addOrder(orderType);
-//                this->totalOrders[tableId] = newTotalOrders; // 确保你的映射正确命名
-//            } else {
-//                this->totalOrders[tableId].addOrder(orderType);
-//            }
-//        }
-//    }
-//}
 
 void Restaurant::createOrder(int tableId, const std::vector<std::string>& orderTypes) {
-    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
-    if (table != tables.end()) {
-        if (table->isAvailable) {
-            std::cout << "Table " << tableId << " is not reserved." << "\n";
-        } else {
-            if (totalOrders.find(tableId) == totalOrders.end()) {
-                TotalOrders newTotalOrders; // Create a new TotalOrders object
-                for (const std::string& orderType : orderTypes) {
-                    newTotalOrders.addOrder(orderType);
-                }
-                this->totalOrders[tableId] = newTotalOrders;
+    if (isWaiterAssigned(tableId)) {
+        cout <<"Waiter is coming to take order for Table No."<< tableId << endl;
+        auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
+        if (table != tables.end()) {
+            if (table->isAvailable) {
+                std::cout << "Table " << tableId << " is not reserved." << "\n";
             } else {
-                for (const std::string& orderType : orderTypes) {
-                    this->totalOrders[tableId].addOrder(orderType);
+                if (totalOrders.find(tableId) == totalOrders.end()) {
+                    TotalOrders newTotalOrders; // Create a new TotalOrders object
+                    for (const std::string& orderType : orderTypes) {
+                        newTotalOrders.addOrder(orderType);
+                    }
+                    this->totalOrders[tableId] = newTotalOrders;
+                } else {
+                    for (const std::string& orderType : orderTypes) {
+                        this->totalOrders[tableId].addOrder(orderType);
+                    }
                 }
             }
         }
+    } else {
+        std::cout << "No waiter is available for table " << tableId << ". Order cannot be placed." << std::endl;
     }
 }
 
@@ -214,11 +203,19 @@ bool Restaurant::Paid(int tableId) {
 }
 
 void Restaurant::MakePayment(int tableId) {
-    printReceipt(tableId);
-    sleep(1);
-    MakeTableAvailable(tableId);
-    sleep(1);
-    cout<<"Payment has been Made for Table No." << tableId << endl;
+    if (isWaiterAssigned(tableId) == true){
+        cout << "Customer is paying for table " << tableId << endl;
+        cout << "Waiter is coming with bill for Table No." << tableId << endl;
+        printReceipt(tableId);
+        sleep(1);
+        MakeTableAvailable(tableId);
+        sleep(1);
+        cout<<"Payment has been Made for Table No." << tableId << endl;
+    }
+    else {
+        cout << "No waiter is available to table, cannot pay " << endl;
+    }
+
 }
 
 void Restaurant::CleanOrders(int tableId) {
@@ -231,6 +228,42 @@ void Restaurant::CleanOrders(int tableId) {
                 std::cout << "No orders for table " << tableId << "\n";
             } else {
                 this->totalOrders.erase(tableId);
+            }
+        }
+    }
+}
+
+void Restaurant::assignWaiter(int tableId) {
+    Waiter waiter(tableId);
+    waiters.push_back(waiter);
+    waiters.back().assignTable(tableId);
+    cout << "Waiter No." << waiters.back().getWaiterId() << " is assigned to table " << tableId << endl;
+}
+
+
+void Restaurant::displayWaiter(int tableId) {
+    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
+    if (table != tables.end()) {
+        cout << "a Waiter is assigned to table " << tableId << endl;
+    }
+}
+
+bool Restaurant::isWaiterAssigned(int tableId) {
+    for (auto &waiter : waiters) {
+        for (auto &assignedTable : waiter.getAssignedTables()) {
+            if (assignedTable == tableId) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+void Restaurant::removeWaiter(int tableId) {
+    for (auto &waiter : waiters) {
+        for (auto &assignedTable : waiter.getAssignedTables()) {
+            if (assignedTable == tableId) {
+                waiter.removeTable(tableId);
             }
         }
     }

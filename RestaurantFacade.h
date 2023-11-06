@@ -28,6 +28,9 @@ public:
     void maketableAvailable(int tableId);
     void MakePayment(int tableId);
     void execute(RestaurantSimulationCommand* command);
+    void displayWaiter(int tableId);
+    void assignWaiter(int tableId);
+    bool isWaiterAssigned(int tableId);
 private:
     Restaurant* restaurant;
 };
