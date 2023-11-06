@@ -75,6 +75,7 @@ void Restaurant::createOrder(int tableId, const string& orderType) {
     }
 }
 
+
 void Restaurant::prepareAndDeliverOrders(int tableId) {
     auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
     if (table != tables.end()) {
@@ -137,8 +138,8 @@ void Restaurant::printReceiptBody(int tableId) {
     this->totalOrders[tableId].printOrders();
 }
 
-//-------------------------------------------------- this is the template method
-void Restaurant::printReceipt(int tableId) {
+
+void Restaurant::printReceipt(int tableId) {//-------------------------------------------------- this is the template method
     printReceiptHeader(tableId);
     printReceiptBody(tableId);
     printReceiptFooter(tableId);
