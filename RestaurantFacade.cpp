@@ -70,3 +70,11 @@ bool RestaurantFacade::isWaiterAssigned(int tableId) {
     return restaurant->isWaiterAssigned(tableId);
 }
 
+void RestaurantFacade::prepare(int tableId) {
+    restaurant->prepare(tableId);
+}
+
+void RestaurantFacade::deliver(int tableId) {
+    restaurant->deliver(tableId);
+}
+

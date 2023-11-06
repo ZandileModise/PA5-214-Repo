@@ -78,3 +78,15 @@ bool TotalOrders::Paid() {
 TotalOrders::~TotalOrders() {
 
 }
+
+void TotalOrders::prepare() {
+    for (auto& order : orders) {
+        order.second->prepare();
+    }
+}
+
+void TotalOrders::deliver() {
+    for (auto& order : orders) {
+        order.second->deliver();
+    }
+}

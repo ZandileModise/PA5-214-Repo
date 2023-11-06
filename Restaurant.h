@@ -50,6 +50,8 @@ public:
     bool isWaiterAssigned(int tableId);
     void removeWaiter(int tableId);
     Iterator* createIterator();
+    void prepare(int tableId);
+    void deliver(int tableId);
 };
 
 

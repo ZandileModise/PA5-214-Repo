@@ -30,6 +30,8 @@ public:
     void printOrders();
     void prepareAndDeliverOrders();
     bool Paid();
+    void prepare();
+    void deliver();
 };
 
 

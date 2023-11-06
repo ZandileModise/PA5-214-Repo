@@ -66,6 +66,7 @@ void Restaurant::MakeTableAvailable(int tableId) {
 void Restaurant::createOrder(int tableId, const std::vector<std::string>& orderTypes) {
     if (isWaiterAssigned(tableId)) {
         cout <<"Waiter is coming to take order for Table No."<< tableId << endl;
+        cout<< "Confirming order" << endl;
         auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
         if (table != tables.end()) {
             if (table->isAvailable) {
@@ -106,6 +107,7 @@ void Restaurant::prepareAndDeliverOrders(int tableId) {
 }
 
 void Restaurant::printOrders(int tableId) {
+    cout<< "Order Confirmed" << endl;
     auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
     if (table != tables.end()) {
         if (table->isAvailable) {
@@ -262,6 +264,7 @@ bool Restaurant::isWaiterAssigned(int tableId) {
 }
 
 void Restaurant::removeWaiter(int tableId) {
+    cout<<"Waiter is busy for now"<<endl;
     for (auto &waiter : waiters) {
         for (auto &assignedTable : waiter.getAssignedTables()) {
             if (assignedTable == tableId) {
@@ -278,3 +281,40 @@ Iterator *Restaurant::createIterator() {
 Restaurant::~Restaurant() {
 
 }
+
+
+void Restaurant::prepare(int tableId) {
+    cout << "Preparing orders for table No." << tableId << endl;
+    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
+    if (table != tables.end()) {
+        if (table->isAvailable) {
+            std::cout << "Table " << tableId << " is not reserved." << "\n";
+        } else {
+            if (totalOrders.find(tableId) == totalOrders.end()) {
+                std::cout << "No orders for table " << tableId << "\n";
+            } else {
+                this->totalOrders[tableId].prepare();
+            }
+        }
+    }
+    cout << "Orders for table No." << tableId << " are ready" << endl;
+}
+
+void Restaurant::deliver(int tableId) {
+    cout << "Delivering orders for table No." << tableId << endl;
+    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
+    if (table != tables.end()) {
+        if (table->isAvailable) {
+            std::cout << "Table " << tableId << " is not reserved." << "\n";
+        } else {
+            if (totalOrders.find(tableId) == totalOrders.end()) {
+                std::cout << "No orders for table " << tableId << "\n";
+            } else {
+                this->totalOrders[tableId].deliver();
+            }
+        }
+    }
+    cout << "Orders for table No." << tableId << " are delivered" << endl;
+    cout << "Customer is eating" << endl;
+}
+

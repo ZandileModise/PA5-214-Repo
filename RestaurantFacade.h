@@ -31,6 +31,8 @@ public:
     void displayWaiter(int tableId);
     void assignWaiter(int tableId);
     bool isWaiterAssigned(int tableId);
+    void prepare(int tableId);
+    void deliver(int tableId);
 private:
     Restaurant* restaurant;
 };
