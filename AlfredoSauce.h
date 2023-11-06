@@ -1,6 +1,6 @@
 #ifndef ALFREDOSAUCE_H
 #define ALFREDOSAUCE_H
-#include "Sauce.h"
+#include "PastaSauce.h"
 
 /**
  * @class AlfredoSauce
@@ -9,7 +9,7 @@
  * This class inherits from Sauce and provides specific details about Alfredo Sauce.
  */
 
-class AlfredoSauce : public Sauce {
+class AlfredoSauce : public PastaSauce {
 public:
 
     /**
@@ -17,7 +17,7 @@ public:
      * @details Sets the price and name for Alfredo Sauce.
      */
 
-    AlfredoSauce(Pizza* p);
+    AlfredoSauce(Pasta* p);
 };
 
 #endif

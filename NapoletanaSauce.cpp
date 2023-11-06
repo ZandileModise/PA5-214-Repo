@@ -5,4 +5,4 @@
  *
  * Initializes the Napoletana Sauce with the appropriate data.
  */
-NapoletanaSauce::NapoletanaSauce() : Sauce(5.0, "Napoletana Sauce") {}
+NapoletanaSauce::NapoletanaSauce(Pasta* p) : PastaSauce(5.0, "Napoletana Sauce", p) {}

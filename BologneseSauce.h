@@ -1,6 +1,6 @@
 #ifndef BOLOGNESESAUCE_H
 #define BOLOGNESESAUCE_H
-#include "Sauce.h"
+#include "PastaSauce.h"
 
 /**
  * @class BologneseSauce
@@ -8,13 +8,13 @@
  * 
  * This class inherits from the Sauce class and provides specific details about Bolognese Sauce.
  */
-class BologneseSauce : public Sauce {
+class BologneseSauce : public PastaSauce {
 public:
     /**
      * @brief Constructor for Bolognese Sauce.
      * @details Sets the price and name for Bolognese Sauce.
      */
-    BologneseSauce();
+    BologneseSauce(Pasta* p);
 };
 
 #endif

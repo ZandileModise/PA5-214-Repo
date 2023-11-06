@@ -15,7 +15,7 @@ PizzaToppings::PizzaToppings(float price, const std::string& name, Pizza* p) : p
  *
  * @return The price of the topping.
  */
-float Toppings::getPrice() const {
+float PizzaToppings::getPrice() const {
     return price + wrapee->getPrice();
 }
 
@@ -24,6 +24,6 @@ float Toppings::getPrice() const {
  *
  * @return The name of the topping.
  */
-std::string Toppings::getName() {
+std::string PizzaToppings::getName() {
     return this->name;
 }

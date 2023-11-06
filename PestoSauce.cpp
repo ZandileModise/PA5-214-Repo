@@ -5,4 +5,4 @@
  *
  * Initializes the Pesto Sauce with the appropriate data.
  */
-PestoSauce::PestoSauce() : Sauce(10.0, "Pesto Sauce") {}
+PestoSauce::PestoSauce(Pasta* p) : PastaSauce(10.0, "Pesto Sauce", p) {}
