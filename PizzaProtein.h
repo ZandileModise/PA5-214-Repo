@@ -10,7 +10,7 @@ using namespace std;
 class PizzaProtein
 {
     public:
-        PizzaProtein(std::string name, float price);
+        PizzaProtein(float price, const std::string& name, Pizza* p) : price(price), name(name), wrapee(p) {}
         float getPrice();
         std::string getName();
 

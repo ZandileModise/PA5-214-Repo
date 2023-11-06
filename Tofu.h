@@ -1,13 +1,13 @@
 #ifndef __TOFU_H_2GL5L69OKGED__
 #define __TOFU_H_2GL5L69OKGED__
-#include "Protein.h"
+#include "PizzaProtein.h"
 ///////////////////////////////////////////////////////////
 /// @brief Tofu
 ///
-class Tofu : public Protein
+class Tofu : public PizzaProtein
 {
     public:
-        Tofu();
+        Tofu(Pizza* p);
 };
 
 #endif  // __TOFU_H_2GL5L69OKGED__

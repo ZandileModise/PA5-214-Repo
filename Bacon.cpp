@@ -6,4 +6,4 @@ using namespace std;
  * @brief Construct a new Bacon:: Bacon object
  * 
  */
-Bacon::Bacon() : Protein("Bacon", 30.0) {}
+Bacon::Bacon(Pizza* p) : PizzaProtein(30.0, "Bacon", p) {}

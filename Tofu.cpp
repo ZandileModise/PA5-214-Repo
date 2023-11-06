@@ -6,4 +6,4 @@ using namespace std;
  * @brief Construct a new Tofu:: Tofu object
  * 
  */
-Tofu::Tofu() : Protein("Tofu", 20.0) {}
+Tofu::Tofu(Pizza* p) : PizzaProtein(20.0, "Tofu", p) {}

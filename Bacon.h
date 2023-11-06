@@ -1,13 +1,13 @@
 #ifndef __BACON_H_F1U6OIOS68E3__
 #define __BACON_H_F1U6OIOS68E3__
-#include "Protein.h"
+#include "PizzaProtein.h"
 ///////////////////////////////////////////////////////////
 /// @brief Bacon
 ///
-class Bacon : public Protein
+class Bacon : public PizzaProtein
 {
     public:
-        Bacon();
+        Bacon(Pizza* p);
 };
 
 #endif  // __BACON_H_F1U6OIOS68E3__

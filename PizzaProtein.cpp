@@ -8,10 +8,7 @@ using namespace std;
  * @param name 
  * @param price 
  */
-PizzaProtein::PizzaProtein(std::string name, float price) {
-    this->name = name;
-    this->price = price;
-}
+PizzaProtein::PizzaProtein(float price, const std::string& name, Pizza* p) : price(price), name(name), wrapee(p) {}
 
 
 /**
@@ -20,7 +17,7 @@ PizzaProtein::PizzaProtein(std::string name, float price) {
  * @return float 
  */
 float PizzaProtein::getPrice() {
-    return price;
+    return price + wrapee->getPrice();
 }
 
 /**
