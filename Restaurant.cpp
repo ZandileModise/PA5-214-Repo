@@ -78,7 +78,7 @@ void Restaurant::createOrder(int tableId, const string &orderType) {
         if (totalOrders.find(tableId) == totalOrders.end()) {
           TotalOrders newTotalOrders; // 使用不同的名称来创建 TotalOrders 对象
           try {
-            table->state = table->state->addOrder();
+            table->state = table->state->order();
             newTotalOrders.addOrder(orderType);
             this->totalOrders[tableId] = newTotalOrders; // 确保你的映射正确命名
           } catch (Exceptions &e) {

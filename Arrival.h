@@ -7,15 +7,12 @@
 */
 class Arrival :public PartyStates {
  private:
-  Arrival() {
-}
+  Arrival();
  public:
-
+friend class Table;
   friend class Customer;
   PartyStates* pay()override;
   PartyStates* order()override;
-  PartyStates* tip()override;
-  PartyStates* addOrder()override;
   PartyStates* completeOrder()override;
   PartyStates* cancelOrder()override;
   PartyStates* exit() override;

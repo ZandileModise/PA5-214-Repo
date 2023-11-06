@@ -7,12 +7,14 @@
  * @date [date]
  */
 #include "Table.h"
+#include"Arrival.h"
 #include"GotTable.h"
 
 Table::Table(int id) {
     this->id = id;
     this->isAvailable = true;
     this->tableSize = 4;
+    state=new Arrival();
 }
 
 void Table::MarkReserved() {
