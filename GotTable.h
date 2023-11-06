@@ -12,7 +12,7 @@ class GotTable :
  public:
   friend class Arrival;
   friend class Table;
-  PartyStates* getTable()override;
+  
   PartyStates* pay()override;
   PartyStates* order()override;
   PartyStates* tip()override;

@@ -12,7 +12,6 @@ class Arrival :public PartyStates {
  public:
 
   friend class Customer;
-  PartyStates* getTable()override;
   PartyStates* pay()override;
   PartyStates* order()override;
   PartyStates* tip()override;

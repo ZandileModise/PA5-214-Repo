@@ -3,14 +3,7 @@
 #include"GotTable.h"
 #include"Exceptions.h"
 #include"Complain.h"
-PartyStates* Arrival::getTable() {
-  if (Restaurant::maxNumOfTables <= Restaurant::numberOfTablesOccupied) {
-    throw new Exceptions("The Restaurant Is Full Right Now , we will notify you if there are any changes");
-  } else {
-    tableNum = ++Restaurant::numberOfTablesOccupied;
-    return new GotTable();
-  }
-}
+
 
 PartyStates* Arrival::pay() {
   throw  new Exceptions("Cannot pay bill before you order");
