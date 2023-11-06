@@ -2,10 +2,10 @@
 #include<iostream>
 #include<string>
 using namespace std;
-PartyState::PartyState() {
+PartyStates::PartyStates() {
 
 }
-void PartyState::complain() {
+void PartyStates::complain() {
   cout << "Input the complain" << endl;
   string complain;
   cout<<"Enter the customer's ID number: ";

@@ -6,6 +6,7 @@
 #define COS214PROJECT_TABLE_H
 #include <vector>
 #include "OrderFactory.h"
+#include "PartyStates.h"
 /**
  * @file Table.h
  * @brief Implementation Table class, which is used to represent a table in the restaurant, each table has a unique id, a state and size of 4
@@ -13,10 +14,6 @@
  */
 
 class Table {
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 public:
     int id;
     bool isAvailable;

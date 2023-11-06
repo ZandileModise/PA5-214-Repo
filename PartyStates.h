@@ -1,24 +1,24 @@
 #pragma once
 using namespace std;
 #include"Exceptions.h"
-class PartyState
+class PartyStates
 {
 public:
-	PartyState();
-	virtual PartyState* getTable()=0;
-	virtual	PartyState* pay() = 0;
-	virtual PartyState* order()=0;
-	virtual PartyState* tip() = 0;
+	PartyStates();
+	virtual PartyStates* getTable()=0;
+	virtual	PartyStates* pay() = 0;
+	virtual PartyStates* order()=0;
+	virtual PartyStates* tip() = 0;
   void complain();
-	virtual PartyState* completeOrder() = 0;
-	virtual PartyState* cancelOrder() = 0;
-	virtual PartyState* addOrder() = 0;
-  virtual PartyState* exit() = 0;
+	virtual PartyStates* completeOrder() = 0;
+	virtual PartyStates* cancelOrder() = 0;
+	virtual PartyStates* addOrder() = 0;
+  virtual PartyStates* exit() = 0;
 	int tableNum;
 
 
 protected:
-	PartyState * state;
+	PartyStates * state;
 
 };
 

@@ -3,28 +3,28 @@
 #include "Complain.h"
 #include "Exit.h"
 #include "Order.h"
-PartyState* GotTable::getTable() {
+PartyStates* GotTable::getTable() {
   throw new Exceptions("You already have a table");
 }
-PartyState* GotTable::pay() {
+PartyStates* GotTable::pay() {
   throw new Exceptions("Cannot pay bill before you order");
 }
-PartyState* GotTable::tip() {
+PartyStates* GotTable::tip() {
   throw new Exceptions("Cannot tip before you order");
 }
-PartyState* GotTable::completeOrder() {
+PartyStates* GotTable::completeOrder() {
 throw new Exceptions("Cannot complete order before you order");
 }
-PartyState*  GotTable::cancelOrder() {
+PartyStates*  GotTable::cancelOrder() {
   throw new Exceptions("Cannot cancel order before you order");
 }
-PartyState* GotTable::addOrder() {
+PartyStates* GotTable::addOrder() {
   return order();
 }
-PartyState* GotTable::order() {
+PartyStates* GotTable::order() {
   return new Order();
 }
 
-PartyState* GotTable::exit() {
+PartyStates* GotTable::exit() {
   return Exit();
 }
