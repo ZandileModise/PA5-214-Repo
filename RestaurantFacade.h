@@ -5,12 +5,12 @@
 #ifndef COS214PROJECT_RESTAURANTFACADE_H
 #define COS214PROJECT_RESTAURANTFACADE_H
 #include "Restaurant.h"
-
+#include "RestaurantSimulationCommand.h"
 class RestaurantFacade {
 public:
     RestaurantFacade();
     void seatCustomers(int numOfCustomers);
-    void createOrder(int tableId, const std::string& orderType);
+    void createOrder(int tableId, const std::vector<std::string>& orderTypes);
     void prepareAndDeliverOrders(int tableId);
     void printOrders(int tableId) ;
     void printReceipt(int tableId);
@@ -18,6 +18,9 @@ public:
     void cloneRestaurant();
     RestaurantMomento* saveRestaurant(int saveId);
     void restoreRestaurant(RestaurantMomento* momento);
+    void maketableAvailable(int tableId);
+    void MakePayment(int tableId);
+    void execute(RestaurantSimulationCommand* command);
 private:
     Restaurant* restaurant;
 

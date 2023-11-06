@@ -2,6 +2,7 @@
 // Created by 77089 on 2023/11/6.
 //
 
+#include <iostream>
 #include "RestaurantFacade.h"
 
 RestaurantFacade::RestaurantFacade() {
@@ -12,8 +13,8 @@ void RestaurantFacade::seatCustomers(int numOfCustomers) {
     restaurant->acceptCustomers(numOfCustomers);
 }
 
-void RestaurantFacade::createOrder(int tableId, const std::string &orderType) {
-    restaurant->createOrder(tableId, orderType);
+void RestaurantFacade::createOrder(int tableId, const std::vector<std::string>& orderTypes) {
+    restaurant->createOrder(tableId, orderTypes);
 }
 
 void RestaurantFacade::prepareAndDeliverOrders(int tableId) {
@@ -42,5 +43,18 @@ RestaurantMomento *RestaurantFacade::saveRestaurant(int saveId) {
 
 void RestaurantFacade::restoreRestaurant(RestaurantMomento *momento) {
     restaurant->restore(momento);
+}
+
+void RestaurantFacade::maketableAvailable(int tableId) {
+    restaurant->MakeTableAvailable(tableId);
+}
+
+void RestaurantFacade::MakePayment(int tableId) {
+  restaurant->MakePayment(tableId);
+}
+
+void RestaurantFacade::execute(RestaurantSimulationCommand *command) {
+    RestaurantSimulationCommand simulationCommand(restaurant);
+    simulationCommand.execute();
 }
 

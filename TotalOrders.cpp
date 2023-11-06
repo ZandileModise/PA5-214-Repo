@@ -9,7 +9,6 @@
 TotalOrders::TotalOrders() = default;
 
 void TotalOrders::addOrder(const std::string &orderType) {
-    // 检查是否已存在相同类型的订单
     auto it = orders.find(orderType);
     if (it != orders.end()) {
         it->second->incrementQuantity();
@@ -69,7 +68,6 @@ TotalOrders& TotalOrders::operator=(const TotalOrders& other) {
 }
 
 bool TotalOrders::Paid() {
- //if order is not empty return true
     if (orders.empty()) {
         return false;
     } else {

@@ -15,7 +15,6 @@
 #include "Customer.h"
 #include "TotalOrders.h"
 #include "RestaurantMomento.h"
-#include "Kitchen.h"
 #include <map>
 using namespace std;
 class RestaurantMomento;
@@ -23,14 +22,13 @@ class Restaurant {
     static Restaurant* instance;
     vector<Table> tables;
     map<int, TotalOrders> totalOrders;
-    Kitchen kitchen;
 
 public:
     static Restaurant* GetInstance();
     Restaurant();
     void acceptCustomers(int numOfCustomers);
     void MakeTableAvailable(int tableId);
-    void createOrder(int tableId, const string& orderType);
+    void createOrder(int tableId, const std::vector<std::string>& orderTypes);
     void prepareAndDeliverOrders(int tableId);
     void printOrders(int tableId);
     float calculateTotalPrice(int tableId);
@@ -42,6 +40,8 @@ public:
     void restore(RestaurantMomento* momento);
     RestaurantMomento* save(int saveId);
     bool Paid(int tableId);
+    void MakePayment(int tableId);
+    void CleanOrders(int tableId);
 };
 
 

@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include <unistd.h>
 #include "Restaurant.h"
 /**
  * @file Restaurant.cpp
@@ -56,20 +57,42 @@ void Restaurant::MakeTableAvailable(int tableId) {
     if (table != tables.end()) {
         table->MakeAvailable();
     }
+    cout<<"Table "<<tableId<<" is now available"<<endl;
 }
 
-void Restaurant::createOrder(int tableId, const string& orderType) {
+//void Restaurant::createOrder(int tableId, const string& orderType) {
+//    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
+//    if (table != tables.end()) {
+//        if (table->isAvailable) {
+//            std::cout << "Table " << tableId << " is not reserved." << "\n";
+//        } else {
+//            if (totalOrders.find(tableId) == totalOrders.end()) {
+//                TotalOrders newTotalOrders; // 使用不同的名称来创建 TotalOrders 对象
+//                newTotalOrders.addOrder(orderType);
+//                this->totalOrders[tableId] = newTotalOrders; // 确保你的映射正确命名
+//            } else {
+//                this->totalOrders[tableId].addOrder(orderType);
+//            }
+//        }
+//    }
+//}
+
+void Restaurant::createOrder(int tableId, const std::vector<std::string>& orderTypes) {
     auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
     if (table != tables.end()) {
         if (table->isAvailable) {
             std::cout << "Table " << tableId << " is not reserved." << "\n";
         } else {
             if (totalOrders.find(tableId) == totalOrders.end()) {
-                TotalOrders newTotalOrders; // 使用不同的名称来创建 TotalOrders 对象
-                newTotalOrders.addOrder(orderType);
-                this->totalOrders[tableId] = newTotalOrders; // 确保你的映射正确命名
+                TotalOrders newTotalOrders; // Create a new TotalOrders object
+                for (const std::string& orderType : orderTypes) {
+                    newTotalOrders.addOrder(orderType);
+                }
+                this->totalOrders[tableId] = newTotalOrders;
             } else {
-                this->totalOrders[tableId].addOrder(orderType);
+                for (const std::string& orderType : orderTypes) {
+                    this->totalOrders[tableId].addOrder(orderType);
+                }
             }
         }
     }
@@ -188,4 +211,27 @@ bool Restaurant::Paid(int tableId) {
         }
     }
     return false;
+}
+
+void Restaurant::MakePayment(int tableId) {
+    printReceipt(tableId);
+    sleep(1);
+    MakeTableAvailable(tableId);
+    sleep(1);
+    cout<<"Payment has been Made for Table No." << tableId << endl;
+}
+
+void Restaurant::CleanOrders(int tableId) {
+    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
+    if (table != tables.end()) {
+        if (table->isAvailable) {
+            std::cout << "Table " << tableId << " is not reserved." << "\n";
+        } else {
+            if (totalOrders.find(tableId) == totalOrders.end()) {
+                std::cout << "No orders for table " << tableId << "\n";
+            } else {
+                this->totalOrders.erase(tableId);
+            }
+        }
+    }
 }

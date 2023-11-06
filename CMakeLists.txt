@@ -28,9 +28,10 @@ add_executable(COS214Project main.cpp
         DesertOrder.h
         DrinkOrder.cpp
         DrinkOrder.h
-        PricingStrategy.cpp
-        PricingStrategy.h
-        Kitchen.cpp
-        Kitchen.h
         RestaurantFacade.cpp
-        RestaurantFacade.h)
+        RestaurantFacade.h
+        RestaurantCommand.cpp
+        RestaurantCommand.h
+        RestaurantSimulationCommand.cpp
+        RestaurantSimulationCommand.h
+)
