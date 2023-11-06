@@ -31,4 +31,14 @@ add_executable(untitled1 main.cpp
         Waiter.cpp
         Waiter.h
         OrderMemento.cpp
-        OrderMemento.h)
+        OrderMemento.h
+        GotTable.cpp
+        GotTable.cpp
+        GotTable.cpp
+        addOrder.cpp
+        addOrder.h
+        addOrder.h
+        addOrder.h
+        Exit.cpp
+        Paid.h
+        Paid.cpp)

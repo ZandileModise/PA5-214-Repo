@@ -2,13 +2,10 @@
 #include "Exceptions.h"
 #include "Complain.h"
 #include "Exit.h"
-#include "Order.h"
+#include "addOrder.h"
 
 PartyStates* GotTable::pay() {
   throw new Exceptions("Cannot pay bill before you order");
-}
-PartyStates* GotTable::tip() {
-  throw new Exceptions("Cannot tip before you order");
 }
 PartyStates* GotTable::completeOrder() {
 throw new Exceptions("Cannot complete order before you order");
@@ -16,13 +13,11 @@ throw new Exceptions("Cannot complete order before you order");
 PartyStates*  GotTable::cancelOrder() {
   throw new Exceptions("Cannot cancel order before you order");
 }
-PartyStates* GotTable::addOrder() {
-  return order();
-}
+
 PartyStates* GotTable::order() {
-  return new Order();
+  return new addOrder();
 }
 
 PartyStates* GotTable::exit() {
-  return Exit();
+  return new Exit();
 }

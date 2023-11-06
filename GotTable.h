@@ -15,10 +15,8 @@ class GotTable :
   
   PartyStates* pay()override;
   PartyStates* order()override;
-  PartyStates* tip()override;
 
   PartyStates* completeOrder()override;
-	PartyStates* addOrder()override;
   PartyStates* cancelOrder()override;
   virtual PartyStates* exit()override;
 };
