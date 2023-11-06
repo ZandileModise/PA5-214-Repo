@@ -1,6 +1,6 @@
 #ifndef ARTICHOKES_H
 #define ARTICHOKES_H
-#include "Toppings.h"
+#include "PizzaToppings.h"
 
 /**
  * @class Artichokes
@@ -8,13 +8,13 @@
  * 
  * This class inherits from the Toppings class and provides specific details about Artichokes.
  */
-class Artichokes : public Toppings {
+class Artichokes : public PizzaToppings {
 public:
     /**
      * @brief Constructor for Artichokes.
      * @details Sets the price and name for Artichokes topping.
      */
-    Artichokes();
+    Artichokes(Pizza* p);
 };
 
 #endif

@@ -5,4 +5,4 @@
  *
  * Initializes the Pepper topping with the appropriate data.
  */
-Pepper::Pepper() : Toppings(15.0, "Pepper") {}
+Pepper::Pepper(Pizza* p) : Toppings(15.0, "Pepper", p) {}

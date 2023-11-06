@@ -1,7 +1,7 @@
 #ifndef MOZZARELLA_H
 #define MOZZARELLA_H
 
-#include "Toppings.h"
+#include "PizzaToppings.h"
 
 /**
  * @class Mozzarella
@@ -10,14 +10,14 @@
  * This class is a derived class from the Toppings base class and provides specific
  * information about the Mozzarella topping.
  */
-class Mozzarella : public Toppings {
+class Mozzarella : public PizzaToppings {
 public:
     /**
      * @brief Constructor for Mozzarella class.
      *
      * Initializes the Mozzarella topping with the appropriate data.
      */
-    Mozzarella();
+    Mozzarella(Pizza* p);
 };
 
 #endif // MOZZARELLA_H

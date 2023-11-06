@@ -1,6 +1,6 @@
 #ifndef FETA_H
 #define FETA_H
-#include "Toppings.h"
+#include "PizzaToppings.h"
 
 /**
  * @class Feta
@@ -8,13 +8,13 @@
  * 
  * This class inherits from the Toppings class and provides specific details about Feta topping.
  */
-class Feta : public Toppings {
+class Feta : public PizzaToppings {
 public:
     /**
      * @brief Constructor for Feta.
      * @details Sets the price and name for Feta topping.
      */
-    Feta();
+    Feta(Pizza * p);
 };
 
 #endif

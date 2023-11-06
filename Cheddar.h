@@ -1,6 +1,6 @@
 #ifndef CHEDDAR_H
 #define CHEDDAR_H
-#include "Toppings.h"
+#include "PizzaToppings.h"
 
 /**
  * @class Cheddar
@@ -8,13 +8,13 @@
  * 
  * This class inherits from the Toppings class and provides specific details about Cheddar topping.
  */
-class Cheddar : public Toppings {
+class Cheddar : public PizzaToppings {
 public:
     /**
      * @brief Constructor for Cheddar.
      * @details Sets the price and name for Cheddar topping.
      */
-    Cheddar();
+    Cheddar(Pizza* p);
 };
 
 #endif

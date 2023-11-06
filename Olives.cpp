@@ -5,4 +5,4 @@
  *
  * Initializes the Olives topping with the appropriate data.
  */
-Olives::Olives() : Toppings(15.0, "Olives") {}
+Olives::Olives(Pizza* p) : Toppings(15.0, "Olives", p) {}

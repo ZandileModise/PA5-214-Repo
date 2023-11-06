@@ -5,4 +5,4 @@
  *
  * Initializes the Gorgonzola topping with the appropriate data.
  */
-Gorgonzola::Gorgonzola() : Toppings(30.0, "Gorgonzola") {}
+Gorgonzola::Gorgonzola(Pizza* p) : Toppings(30.0, "Gorgonzola", p) {}

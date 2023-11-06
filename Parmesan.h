@@ -1,7 +1,7 @@
 #ifndef PARMESAN_H
 #define PARMESAN_H
 
-#include "Toppings.h"
+#include "PizzaToppings.h"
 
 /**
  * @class Parmesan
@@ -10,14 +10,14 @@
  * This class is a derived class from the Toppings base class and provides specific
  * information about the Parmesan topping.
  */
-class Parmesan : public Toppings {
+class Parmesan : public PizzaToppings {
 public:
     /**
      * @brief Constructor for Parmesan class.
      *
      * Initializes the Parmesan topping with the appropriate data.
      */
-    Parmesan();
+    Parmesan(Pizza* p);
 };
 
 #endif // PARMESAN_H
