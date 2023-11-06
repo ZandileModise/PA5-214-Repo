@@ -7,7 +7,7 @@ public:
   ParmesanDecorator(Pizza *p) {
     this->wrapee = p;
     this->name = "Parmesan";
-    this->price = 10;
+    this->price = 15;
   }
 
   float getPrice() override { return this->price + wrapee->getPrice(); }

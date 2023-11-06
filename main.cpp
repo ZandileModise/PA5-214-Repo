@@ -1,4 +1,11 @@
+#include "AvocadoDecorator.h"
+#include "BaconDecorator.h"
+#include "DeepDish.h"
+#include "MozarellaDecorator.h"
 #include "Pizza.h"
+#include "ThickCrust.h"
+#include "ThinCrust.h"
+#include "TomatoSauceDecorator.h"
 
 int main() {
   Pizza *pizza = new ThinCrust();
