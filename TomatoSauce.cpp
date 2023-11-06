@@ -5,4 +5,4 @@
  *
  * Initializes the Tomato Sauce with the appropriate data.
  */
-TomatoSauce::TomatoSauce() : Sauce(5.0, "Tomato Sauce") {}
+TomatoSauce::TomatoSauce(Pizza* p) : Sauce(5.0, "Tomato Sauce", p) {}

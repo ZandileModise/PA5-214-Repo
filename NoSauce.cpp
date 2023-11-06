@@ -5,4 +5,4 @@
  *
  * Initializes a dish with no sauce.
  */
-NoSauce::NoSauce() : Sauce(0.0, "No Sauce") {}
+NoSauce::NoSauce(Pizza* p) : Sauce(0.0, "No Sauce", p) {}

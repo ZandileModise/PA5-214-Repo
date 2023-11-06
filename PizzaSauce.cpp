@@ -1,4 +1,4 @@
-#include "Sauce.h"
+#include "PizzaSauce.h"
 
 /**
  * @brief Constructor for Sauce class.
@@ -8,7 +8,7 @@
  * @param price The price of the sauce.
  * @param name  The name of the sauce.
  */
-Sauce::Sauce(float price, const std::string& name) : price(price), name(name) {}
+PizzaSauce::PizzaSauce(float price, const std::string& name, Pizza* p) : price(price), name(name), wrapee(p) {}
 
 /**
  * @brief Get the price of the sauce.
@@ -16,5 +16,5 @@ Sauce::Sauce(float price, const std::string& name) : price(price), name(name) {}
  * @return The price of the sauce.
  */
 float Sauce::getPrice() const {
-    return price;
+    return price + wrapee->getPrice();
 }

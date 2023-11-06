@@ -9,7 +9,7 @@
  *
  * This class provides information about a sauce, including its price and name.
  */
-class Sauce {
+class PizzaSauce {
 public:
     /**
      * @brief Constructor for Sauce class.
@@ -19,7 +19,7 @@ public:
      * @param price The price of the sauce.
      * @param name  The name of the sauce.
      */
-    Sauce(float price, const std::string& name);
+    PizzaSauce(float price, const std::string& name, Pizza* p);
 
     /**
      * @brief Get the price of the sauce.
@@ -31,6 +31,7 @@ public:
 private:
     float price;         ///< The price of the sauce.
     std::string name;    ///< The name of the sauce.
+    Pizza* wrapee;
 };
 
 #endif // SAUCE_H

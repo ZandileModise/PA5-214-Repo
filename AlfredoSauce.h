@@ -17,7 +17,7 @@ public:
      * @details Sets the price and name for Alfredo Sauce.
      */
 
-    AlfredoSauce();
+    AlfredoSauce(Pizza* p);
 };
 
 #endif
