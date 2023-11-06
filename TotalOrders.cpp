@@ -67,3 +67,12 @@ TotalOrders& TotalOrders::operator=(const TotalOrders& other) {
 
     return *this;
 }
+
+bool TotalOrders::Paid() {
+ //if order is not empty return true
+    if (orders.empty()) {
+        return false;
+    } else {
+        return true;
+    }
+}

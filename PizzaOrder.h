@@ -7,8 +7,8 @@
 #include "Order.h"
 
 class PizzaOrder : public Order {
-    float price = 100;
-    int quantity;
+float price = 100;
+int quantity;
 public:
     PizzaOrder() : quantity(1) {};
     void prepare() override;

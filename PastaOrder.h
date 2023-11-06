@@ -8,8 +8,8 @@
 #include "Order.h"
 #include "Table.h"
 class PastaOrder : public Order{
-    float price = 50;
-    int quantity;
+ float price = 50;
+ int quantity;
 public:
     float getPrice() const override;
     void prepare() override;

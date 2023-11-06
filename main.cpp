@@ -1,13 +1,12 @@
 #include <iostream>
 #include "Restaurant.h"
-
 #include "Order.h"
 #include "OrderFactory.h"
 #include "TotalOrders.h"
+#include "RestaurantMomento.h"
 
 int main() {
-    Restaurant* restaurant =nullptr;
-    restaurant=Restaurant::GetInstance();
+    Restaurant* restaurant = Restaurant::GetInstance();
     restaurant->acceptCustomers(3);
     restaurant->acceptCustomers(2);
     TotalOrders totalOrders;
