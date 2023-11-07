@@ -7,25 +7,16 @@ Welcome to the Restaurant Simulator project! This project aims to create a simul
 
 ## Directory Structure
 .                # Root Directory 
-
+|
 ├── Documents    # Project Reports
-
+|
 ├── Doxygen      # Documentation files
-
+|
 ├── System       # Source code folder
-
+|
 ├── vpp          # Visual Paradigm files
-
+|
 └── README.md    # Readme for our project
-
-#!/bin/bash
-
-#File: tree-md
-
-tree=$(tree -tf --noreport -I '*~' --charset ascii $1 |
-       sed -e 's/| \+/  /g' -e 's/[|`]-\+/ */g' -e 's:\(* \)\(\(.*/\)\([^/]\+\)\):\1[\4](\2):g')
-
-printf "# Project tree\n\n${tree}"
 
 
 ## Project Description
