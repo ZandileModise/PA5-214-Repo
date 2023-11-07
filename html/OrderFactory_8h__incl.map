@@ -1,0 +1,9 @@
+<map id="OrderFactory.h" name="OrderFactory.h">
+<area shape="rect" id="node1" title="Implementation of the OrderFactory class, which is used to represent a factory that creates orders in..." alt="" coords="131,5,245,32"/>
+<area shape="rect" id="node2" href="$Order_8h.html" title="Implementation of the Order class, which is used to represent an order in the restaurant." alt="" coords="5,80,75,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,155,105,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="149,80,227,107"/>
+<area shape="rect" id="node5" href="$Table_8h.html" title="Implementation Table class, which is used to represent a table in the restaurant, each table has a un..." alt="" coords="251,80,319,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="254,229,317,256"/>
+<area shape="rect" id="node7" href="$Waiter_8h.html" title="Implementation of the Waiter class, which is used to represent a waiter in the restaurant." alt="" coords="285,155,360,181"/>
+</map>
