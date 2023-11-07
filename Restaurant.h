@@ -24,6 +24,7 @@ class Restaurant {
     vector<Table> tables;
     map<int, TotalOrders> totalOrders;
     std::vector<Waiter> waiters;
+    int numOfCustomers;
 
 public:
     static Restaurant* GetInstance();
@@ -51,7 +52,10 @@ public:
     void removeWaiter(int tableId);
     Iterator* createIterator();
     void prepare(int tableId);
-    void deliver(int tableId);
+    void deliver(int tableId);;
+    int getNumberOfCustomersAtTable(int tableId);
+    void splitBill(int tableId);
+    bool ifwantToSplitBill(int tableId);
 };
 
 

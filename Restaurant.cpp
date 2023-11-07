@@ -210,11 +210,16 @@ void Restaurant::MakePayment(int tableId) {
     if (isWaiterAssigned(tableId) == true){
         cout << "Customer is paying for table " << tableId << endl;
         cout << "Waiter is coming with bill for Table No." << tableId << endl;
-        printReceipt(tableId);
-        sleep(1);
-        MakeTableAvailable(tableId);
-        sleep(1);
-        cout<<"Payment has been Made for Table No." << tableId << endl;
+        if(ifwantToSplitBill(tableId)){
+            printReceipt(tableId);
+            sleep(1);
+            splitBill(tableId);
+        }
+        else{    printReceipt(tableId);
+            sleep(1);
+            MakeTableAvailable(tableId);
+            sleep(1);
+            cout<<"Payment has been Made for Table No." << tableId << endl;}
     }
     else {
         cout << "No waiter is available to table, cannot pay " << endl;
@@ -317,4 +322,69 @@ void Restaurant::deliver(int tableId) {
     cout << "Orders for table No." << tableId << " are delivered" << endl;
     cout << "Customer is eating" << endl;
 }
+
+int Restaurant::getNumberOfCustomersAtTable(int tableId) {
+    // Check if the table is reserved
+    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
+    if (table != tables.end()) {
+        if (table->isAvailable) {
+            std::cout << "Table " << tableId << " is not reserved." << "\n";
+            return 0;
+        }
+    } else {
+        std::cout << "Table " << tableId << " not found." << "\n";
+        return 0;
+    }
+
+    // Check if there are orders for the table
+    if (totalOrders.find(tableId) == totalOrders.end()) {
+        std::cout << "No orders for table " << tableId << "\n";
+        return 0;
+    }
+
+    // Get the number of customers at the table
+    return totalOrders[tableId].getNumberOfCustomers();
+}
+
+void Restaurant::splitBill(int tableId) {
+    auto table = std::find_if(tables.begin(), tables.end(), [tableId](Table &table) { return table.id == tableId; });
+    if (table != tables.end()) {
+        if (table->isAvailable) {
+            std::cout << "Table " << tableId << " is not reserved." << "\n";
+            return;
+        }
+    } else {
+        std::cout << "Table " << tableId << " not found." << "\n";
+        return;
+    }
+    if (totalOrders.find(tableId) == totalOrders.end()) {
+        std::cout << "No orders for table " << tableId << "\n";
+        return;
+    }
+    if (!isWaiterAssigned(tableId)) {
+        std::cout << "No waiter is available for table " << tableId << ". Cannot split the bill." << std::endl;
+        return;
+    }
+
+    float totalPrice = calculateTotalPrice(tableId);
+    int numCustomers = getNumberOfCustomersAtTable(tableId);
+    float individualShare = totalPrice / numCustomers;
+    std::cout << "Splitting the bill for table " << tableId << " among " << numCustomers << " Orders:" << std::endl;
+    for (int i = 1; i <= numCustomers; i++) {
+        std::cout << "Order " << i << ": $" << individualShare << std::endl;
+    }
+}
+
+bool Restaurant::ifwantToSplitBill(int tableId) {
+    cout << "Do you want to split the bill for table " << tableId << "? (y/n)" << endl;
+    string answer;
+    cin >> answer;
+    if (answer == "y") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
 

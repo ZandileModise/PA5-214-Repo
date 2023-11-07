@@ -13,6 +13,9 @@
 #include <vector>
 
 class Waiter {
+private:
+    int waiterId;
+    std::vector<int> assignedTables;
 public:
     Waiter(int waiterId);
     int getWaiterId() const;
@@ -21,9 +24,8 @@ public:
     std::vector<int> getAssignedTables() const;
     void printAssignedTables() const;
     void printWaiterInfo() const;
-private:
-    int waiterId;
-    std::vector<int> assignedTables;
+    Waiter* clone();
+
 };
 
 

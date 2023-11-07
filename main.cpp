@@ -35,8 +35,9 @@ int main() {
 //    restaurantFacade.seatCustomers(3);
 //    restaurantFacade.createOrder(1, {"Pizza", "Pasta", "Pizza", "Drink", "Salad"});
 //    restaurantFacade.printOrders(1);
-
+//
     RestaurantFacade facade;
-    facade.execute(new RestaurantSimulationCommand(Restaurant::GetInstance()));
+     facade.execute(new RestaurantSimulationCommand(Restaurant::GetInstance()));
+
 
 }

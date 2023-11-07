@@ -44,3 +44,7 @@ void Waiter::printWaiterInfo() const {
     std::cout << "\n";
 }
 
+Waiter* Waiter::clone() {
+    return new Waiter(*this);
+}
+

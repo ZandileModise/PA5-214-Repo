@@ -32,6 +32,7 @@ public:
     bool Paid();
     void prepare();
     void deliver();
+    int getNumberOfCustomers();
 };
 
 

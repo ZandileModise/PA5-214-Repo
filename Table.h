@@ -16,6 +16,7 @@
 class Table {
 private:
     Waiter* waiter;
+    int numberOfCustomers;
 public:
     int id;
     bool isAvailable;
@@ -30,9 +31,8 @@ public:
     int getWaiterId();
     void assignWaiter(int i);
     bool isWaiterAssigned();
-
+    int getNumberofCustomers();
     int getNumberOfTables();
-
     Table getTable(int i);
 };
 

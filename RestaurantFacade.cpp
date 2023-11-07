@@ -78,3 +78,7 @@ void RestaurantFacade::deliver(int tableId) {
     restaurant->deliver(tableId);
 }
 
+void RestaurantFacade::splitBill(int tableId) {
+    restaurant->splitBill(tableId);
+}
+

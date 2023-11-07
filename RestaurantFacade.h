@@ -14,6 +14,8 @@
 #include "Restaurant.h"
 #include "RestaurantSimulationCommand.h"
 class RestaurantFacade {
+private:
+    Restaurant* restaurant;
 public:
     RestaurantFacade();
     void seatCustomers(int numOfCustomers);
@@ -33,8 +35,8 @@ public:
     bool isWaiterAssigned(int tableId);
     void prepare(int tableId);
     void deliver(int tableId);
-private:
-    Restaurant* restaurant;
+    void splitBill(int tableId);
+
 };
 
 

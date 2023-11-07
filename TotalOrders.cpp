@@ -90,3 +90,11 @@ void TotalOrders::deliver() {
         order.second->deliver();
     }
 }
+
+int TotalOrders::getNumberOfCustomers() {
+    int numOfCustomers = 0;
+    for (auto& order : orders) {
+        numOfCustomers += order.second->getQuantity();
+    }
+    return numOfCustomers;
+}
