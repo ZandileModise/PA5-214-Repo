@@ -1,4 +1,6 @@
 #Restaurant-Simulation by Take A Byte
+
+
 ![Brown and Beige Modern Resto Logo(3)](https://github.com/ZandileModise/PA5-214-Repo/assets/134503930/59d85113-5e6f-40e1-a38f-48cb6c0b5dd7)
 
 Welcome to the Restaurant Simulator project! This project aims to create a simulation of a restaurant where customers can dine, place orders, and experience the operations of a restaurant environment.
