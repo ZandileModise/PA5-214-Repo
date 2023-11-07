@@ -6,7 +6,7 @@
 Welcome to the Restaurant Simulator project! This project aims to create a simulation of a restaurant where customers can dine, place orders, and experience the operations of a restaurant environment.
 
 ## Directory Structure
-.              # Root Directory
+.              # Root Directory                      
 ├── System      # Source code folder
 ├── Doxygen     # Documentation files
 ├── VPP         # Visual Paradigm files
@@ -32,11 +32,17 @@ The project incorporates several design patterns, enhancing its architecture and
 
 ## Group Members
 u18234039 – Jiahoa Hu
+
 u21439321- Sonaly Ambelal
+
 u21508322- Zandile Modise
+
 u21516741- James Fitzsimons
+
 u21525936- Victor Zhou
+
 u21556416- Asakundwi Siphuma
+
 u21785742- Itumeleng Moshokoa
 
 
