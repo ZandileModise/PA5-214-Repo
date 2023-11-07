@@ -5,7 +5,7 @@
 #include "ChedderDecorator.h"
 #include "ChickenDecorator.h"
 #include "FetaDecorator.h"
-#include "GorgonzolaDecpratpr.h"
+#include "GorgonzolaDecorator.h"
 #include "HamDecorator.h"
 #include "MozarellaDecorator.h"
 #include "MushroomDecorator.h"
@@ -24,7 +24,7 @@
 class ToppingsChef : public PizzaChefHandler {
 public:
   void process(std::vector<std::string> OrderVector, Pizza *pizza) {
-    cout << "adding toppings" << endl;
+    std::cout << "adding toppings" << std::endl;
     Pizza *p = pizza;
     for (int i = 1; i < OrderVector.size(); i++) {
       if (OrderVector[i] == "Feta") {

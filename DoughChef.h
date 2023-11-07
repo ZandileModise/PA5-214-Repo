@@ -9,11 +9,24 @@
 #include <string>
 #include <vector>
 
+/**
+ * @brief A class representing a chef handling dough preparation for pizzas.
+ *
+ * This class is part of a chain of responsibility and inherits from
+ * PizzaChefHandler.
+ */
 class DoughChef : public PizzaChefHandler {
 public:
+  /**
+   * @brief Processes the dough preparation based on the order information.
+   *
+   * @param OrderVector A vector containing order information.
+   * @param pizza The base Pizza object.
+   */
   void process(std::vector<std::string> OrderVector, Pizza *pizza) {
     Pizza *p = pizza;
-    cout << "Rolling the dough" << endl;
+    std::cout << "Rolling the dough" << std::endl;
+
     if (OrderVector[0] == "ThickCrust") {
       p = new ThickCrust();
     }
@@ -26,5 +39,11 @@ public:
 
     successor->process(OrderVector, p);
   };
+
+  /**
+   * @brief Constructs a DoughChef object.
+   *
+   * @param next A pointer to the next chef in the chain of responsibility.
+   */
   DoughChef(ToppingsChef *next) { this->successor = next; };
 };
