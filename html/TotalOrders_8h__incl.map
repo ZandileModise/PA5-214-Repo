@@ -1,0 +1,11 @@
+<map id="TotalOrders.h" name="TotalOrders.h">
+<area shape="rect" id="node1" title="Implementation of the TotalOrder class, it uses composite pattern to ensure that the orders are store..." alt="" coords="49,5,157,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="34,229,111,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="147,304,206,331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="78,80,128,107"/>
+<area shape="rect" id="node5" href="$Order_8h.html" title="Implementation of the Order class, which is used to represent an order in the restaurant." alt="" coords="142,229,211,256"/>
+<area shape="rect" id="node6" href="$Table_8h.html" title="Implementation Table class, which is used to represent a table in the restaurant, each table has a un..." alt="" coords="226,80,294,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="361,229,424,256"/>
+<area shape="rect" id="node8" href="$OrderFactory_8h.html" title="Implementation of the OrderFactory class, which is used to represent a factory that creates orders in..." alt="" coords="203,155,318,181"/>
+<area shape="rect" id="node9" href="$Waiter_8h.html" title="Implementation of the Waiter class, which is used to represent a waiter in the restaurant." alt="" coords="392,155,467,181"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RestaurantCommand.h" name="RestaurantCommand.h">
+<area shape="rect" id="node1" title="Implementation of the RestaurantCommand class, which is used to represent a abstract command in the r..." alt="" coords="41,5,213,32"/>
+<area shape="rect" id="node2" href="$RestaurantSimulationCommand_8h.html" title="Implementation of the RestaurantCommand class, which is used to represent a abstract command in the r..." alt="" coords="5,80,248,107"/>
+<area shape="rect" id="node3" href="$RestaurantFacade_8h.html" title="Implementation of the RestaurantFacade class, which is used to represent a facade in the restaurant." alt="" coords="51,155,202,181"/>
+</map>

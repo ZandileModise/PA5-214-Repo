@@ -1,0 +1,15 @@
+<map id="Table.h" name="Table.h">
+<area shape="rect" id="node1" title="Implementation Table class, which is used to represent a table in the restaurant, each table has a un..." alt="" coords="366,5,434,32"/>
+<area shape="rect" id="node2" href="$Iterator_8h.html" title="Implementation of the Iterator class, which is used to represent an iterator in the restaurant." alt="" coords="53,80,134,107"/>
+<area shape="rect" id="node3" href="$Restaurant_8h.html" title="Implementation of the Restaurant class, it uses the Singleton pattern to ensure that only one instanc..." alt="" coords="147,155,253,181"/>
+<area shape="rect" id="node6" href="$RestaurantMomento_8h.html" title="Implementation of the RestaurantMomento class, which is used to represent a momento in the restaurant..." alt="" coords="467,229,634,256"/>
+<area shape="rect" id="node9" href="$OrderFactory_8h.html" title="Implementation of the OrderFactory class, which is used to represent a factory that creates orders in..." alt="" coords="343,80,457,107"/>
+<area shape="rect" id="node10" href="$PastaOrder_8h.html" title="Implementation of the PastaOrder class, which is used to represent a pasta order in the restaurant." alt="" coords="481,80,585,107"/>
+<area shape="rect" id="node11" href="$Table_8cpp.html" title="Implementation Table class, which is used to represent a table in the restaurant, each table has a un..." alt="" coords="609,80,692,107"/>
+<area shape="rect" id="node12" href="$TotalOrders_8h.html" title="Implementation of the TotalOrder class, it uses composite pattern to ensure that the orders are store..." alt="" coords="210,80,318,107"/>
+<area shape="rect" id="node8" href="$TableIterator_8h.html" title="Implementation of the TableIterator class, which is used to represent a table iterator in the restaur..." alt="" coords="8,155,123,181"/>
+<area shape="rect" id="node4" href="$Restaurant_8cpp.html" title="Implementation of the Restaurant class, it uses the Singleton pattern to ensure that only one instanc..." alt="" coords="5,229,125,256"/>
+<area shape="rect" id="node5" href="$RestaurantFacade_8h.html" title="Implementation of the RestaurantFacade class, which is used to represent a facade in the restaurant." alt="" coords="166,304,317,331"/>
+<area shape="rect" id="node7" href="$RestaurantSimulationCommand_8h.html" title="Implementation of the RestaurantCommand class, which is used to represent a abstract command in the r..." alt="" coords="200,229,443,256"/>
+<area shape="rect" id="node13" href="$Kitchen_8h_source.html" title=" " alt="" coords="276,155,359,181"/>
+</map>
