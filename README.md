@@ -6,12 +6,13 @@
 Welcome to the Restaurant Simulator project! This project aims to create a simulation of a restaurant where customers can dine, place orders, and experience the operations of a restaurant environment.
 
 ## Directory Structure
-.                   # Root Directory
-├── System          # Source code folder
-├── Doxygen         # Documentation files
-├── VPP             # Visual Paradigm files
-├── Documents       # Project Reports
-└── README.md       # Readme for our project
+.              # Root Directory
+├── System      # Source code folder
+├── Doxygen     # Documentation files
+├── VPP         # Visual Paradigm files
+├── Documents   # Project Reports
+└── README.md   # Readme for our project
+
 
 ## Project Description
 
