@@ -1,11 +1,11 @@
-#Restaurant-Simulation by Take A Byte
+## Restaurant-Simulation by Take A Byte
 
 
 ![Brown and Beige Modern Resto Logo(3)](https://github.com/ZandileModise/PA5-214-Repo/assets/134503930/59d85113-5e6f-40e1-a38f-48cb6c0b5dd7)
 
 Welcome to the Restaurant Simulator project! This project aims to create a simulation of a restaurant where customers can dine, place orders, and experience the operations of a restaurant environment.
 
-Directory Structure
+## Directory Structure
 .                   # Root Directory
 ├── System          # Source code folder
 ├── Doxygen         # Documentation files
@@ -26,10 +26,10 @@ The Restaurant Simulator project simulates the operations of a restaurant, inclu
 - **Bill Management:** Manages bills, including options for splitting bills and starting tabs.
 - **Design Patterns:** Utilizes various design patterns for robust system design and flexibility.
 
-- Design Patterns
+## Design Patterns
 The project incorporates several design patterns, enhancing its architecture and flexibility. These patterns include Factory Method, Singleton, Observer, Memento, and more. Each pattern is employed to address specific aspects of the system design.
 
-Group Members
+## Group Members
 u18234039 – Jiahoa Hu
 u21439321- Sonaly Ambelal
 u21508322- Zandile Modise
